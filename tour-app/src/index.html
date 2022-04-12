@@ -41,7 +41,7 @@
             <img alt="140x140" data-src="holder.js/170x170" class="img-rounded img-center" style="width: 230px; height: 280px;" src="images/Milli.png" data-holder-rendered="true">
             <br/><br/>
             <div class="col-md-12 text-center"> 
-              <button class="btn btn-default btn-vote" type="button" data-id="0">Vote</button>
+              <button class="btn btn-default btn-buy" type="button" data-id="0">Buy</button>
             </div>  
           </div>
         </div>
@@ -51,15 +51,26 @@
     <div class="container">
       <div class="row" id="address_div">
         <div style="margin-left: 15px;margin-top: 10px;">
-          <span> Address : </span>
-          <select id="enter_address" value=""></select>
+          <span> Is Seller : </span>
+          <select id="isSeller" value=""></select>
+        </div>
+
+        <div style="margin-left: 25px;margin-top: 10px;">
+          <span> Price: </span>
+          <select id="price" value=""></select>
         </div>
       </div>
-      <button class="btn btn-success" type="button" id="win-count" style="float:right; margin-right: 5px;">Declare Winner</button>
+      <button class="btn btn-success" type="button" id="view-balance" style="float:right; margin-right: 5px;">View Balance</button>
         <br>
       <div class="row" id="register_div">
         <div style="margin-left: 15px;">
           <button class="btn btn-info" type="button" id="register">Register</button>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="withdraw_div">
+        <div style="margin-left: 10px;">
+          <button class="btn btn-info" type="button" id="btn-withdraw">Withdraw</button>
         </div>
       </div>
       <br>
@@ -73,6 +84,6 @@
     <script src="js/dist/bootstrap.min.js"></script>
     <script src="js/dist/web3.min.js"></script>
     <script src="js/dist/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app1.js"></script>
   </body>
 </html>

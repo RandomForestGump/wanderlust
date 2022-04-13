@@ -60,6 +60,8 @@ App = {
       // $(document).on('click', '#view-balance', App.handleViewBalance);
       $(document).on('click', '#register', function(){ 
                       var ad = $('#isSeller').val(); 
+                      console.log(ad);
+                      console.log(price);
                       var price = $('#price').val(); 
                       App.handleRegister(ad, price);});
     },
@@ -80,6 +82,8 @@ App = {
     var voteInstance;
     web3.eth.getAccounts(function(error, accounts) {
     var account = accounts[0];
+    // let price = prompt("what is your name?");
+    console.log(price);
     App.contracts.tour.deployed().then(function(instance) {
         voteInstance = instance;
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price

@@ -52,12 +52,19 @@
       <div class="row" id="address_div">
         <div style="margin-left: 15px;margin-top: 10px;">
           <span> Is Seller : </span>
-          <select id="isSeller" value=""></select>
+          <select id="isSeller">
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
         </div>
 
-        <div style="margin-left: 25px;margin-top: 10px;">
-          <span> Price: </span>
-          <select id="price" value=""></select>
+        <div style="margin-left: 25px;margin-top: 20px;">
+          <!-- <span> Price: </span> -->
+          <!-- <select id="price" value=""></select> -->
+          <form>
+            Price :
+            <input type="number" name="price" value="100">
+            </form>
         </div>
       </div>
       <button class="btn btn-success" type="button" id="view-balance" style="float:right; margin-right: 5px;">View Balance</button>

@@ -6,7 +6,7 @@ App = {
     chairPerson:null,
     currentAccount:null,
     init: function() {
-      $.getJSON('../tour.json', function(data) {
+      $.getJSON('../proposals.json', function(data) {
         var proposalsRow = $('#proposalsRow');
         var proposalTemplate = $('#proposalTemplate');
   
@@ -54,11 +54,14 @@ App = {
     },
   
     bindEvents: function() {
-      $(document).on('click', '.btn-buy', function(){App.handleBuyTour();} );
-      $(document).on('click', '#btn-withdraw', App.handleWithdraw);
+      $(document).on('click', '.btn-buy', App.handleBuyTour);
+      // $(document).on('click', '#btn-withdraw', App.handleWithdraw);
       $(document).on('click', '#add-item', App.handleAddTour);
-      $(document).on('click', '#view-balance', App.handleViewBalance);
-      $(document).on('click', '#register', function(){ var ad = $('#isSeller').val(); var price = $('#price').val(); App.handleRegister(ad, price);});
+      // $(document).on('click', '#view-balance', App.handleViewBalance);
+      $(document).on('click', '#register', function(){ 
+                      var ad = $('#isSeller').val(); 
+                      var price = $('#price').val(); 
+                      App.handleRegister(ad, price);});
     },
 
     populateAddress : function(){
@@ -188,4 +191,10 @@ handleviewUserBalance : function() {
 }
 
 
-}
+};
+
+$(function() {
+  $(window).load(function() {
+    App.init();
+  });
+});

@@ -6,7 +6,7 @@ App = {
     chairPerson:null,
     currentAccount:null,
     init: function() {
-      $.getJSON('../proposals.json', function(data) {
+      $.getJSON('../tourAttr.json', function(data) {
         var proposalsRow = $('#proposalsRow');
         var proposalTemplate = $('#proposalTemplate');
   
@@ -40,13 +40,13 @@ App = {
   
   
     initContract: function() {
-        $.getJSON('LocalLens.json', function(data) {
+        $.getJSON('tour.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract
       var voteArtifact = data;
       App.contracts.tour = TruffleContract(voteArtifact);   /////??????
   
       // Set the provider for our contract
-      App.contracts.vote.setProvider(App.web3Provider);
+      App.contracts.tour.setProvider(App.web3Provider);
       
       // App.getChairperson();/////????????????????
       return App.bindEvents();
@@ -82,15 +82,15 @@ App = {
     var account = accounts[0];
     App.contracts.tour.deployed().then(function(instance) {
         voteInstance = instance;
-        return voteInstance.register(!isSeller, {from: this.state.account, value: price}); //input price
+        return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
         if(result){
             if(parseInt(result.receipt.status) == 1)
-            alert(addr + " registration done successfully")
+            alert( " registration done successfully")
             else
-            alert(addr + " registration not done successfully due to revert")
+            alert( " registration not done successfully due to revert")
         } else {
-            alert(addr + " registration failed")
+            alert( " registration failed")
         }   
     })
     })
@@ -103,7 +103,7 @@ handleWithdraw: function(){
   var account = accounts[0];
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
-      return voteInstance.withdraw({from: this.state.account}); //input price
+      return voteInstance.withdraw({from: account}); //input price
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
@@ -124,15 +124,15 @@ handleAddTour: function(price){
   var account = accounts[0];
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
-      return voteInstance.addTour(_id, price, {from: this.state.account}); //input price
+      return voteInstance.addTour(_id, price, {from: account}); //input price
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
-          alert(addr + " Withdraw done successfully")
+          alert( " Withdraw done successfully")
           else
-          alert(addr + " Withdraw not done successfully due to revert")
+          alert( " Withdraw not done successfully due to revert")
       } else {
-          alert(addr + " Withdraw failed")
+          alert( " Withdraw failed")
       }   
   })
   })
@@ -147,15 +147,15 @@ handleBuyTour: function(event){
   var account = accounts[0];
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
-      return voteInstance.buyTour(_id, {from: this.state.account}); //input price
+      return voteInstance.buyTour(_id, {from: account}); //input price
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
-          alert(addr + " Buy Tour done successfully")
+          alert( " Buy Tour done successfully")
           else
-          alert(addr + " Buy Tour not done successfully due to revert")
+          alert(" Buy Tour not done successfully due to revert")
       } else {
-          alert(addr + " Buy Tour failed")
+          alert( " Buy Tour failed")
       }   
   })
   })
@@ -167,7 +167,7 @@ handleViewBalance : function() {
   var voteInstance;
   App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.viewBalance({from: this.state.account});
+    return voteInstance.viewBalance({from: account});
   }).then((r)=>{
     jQuery('#counter_value').text(r)
     alert(res + "  is the balance ! :)");
@@ -181,7 +181,7 @@ handleviewUserBalance : function() {
   var voteInstance;
   App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.viewUserBalance({from: this.state.account});
+    return voteInstance.viewUserBalance({from: account});
   }).then((r)=>{
     jQuery('#counter_value').text(r)
     alert(res + "  is the balance ! :)");

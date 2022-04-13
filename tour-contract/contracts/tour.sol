@@ -1,7 +1,7 @@
 pragma solidity >=0.4.2 <=0.6.0;
 // pragma solidity ^0.6.2;
 
-contract LocalLens  {
+contract tour  {
    
     // address chairperson;
 
@@ -83,6 +83,7 @@ contract LocalLens  {
         //Get seller
         address seller = metaId[id].seller;
         uint price = metaId[id].price;
+        assert(price!=0);
         //Get buyer balance
         assert(userMap[msg.sender].escrow - price >= 0);
         //Deduct buyer balance

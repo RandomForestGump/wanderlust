@@ -1,6 +1,5 @@
-//SPDX-License-Identifier: UNLICENSED
-
-pragma solidity ^0.6.2;
+pragma solidity >=0.4.2 <=0.6.0;
+// pragma solidity ^0.6.2;
 
 contract LocalLens  {
    
@@ -59,19 +58,19 @@ contract LocalLens  {
         
     }
         
-   function withdraw () onlyUser public {
-        
-        
-        userMap[msg.sender].status=false;
-        payable(msg.sender).transfer(userMap[msg.sender].escrow);
-        userMap[msg.sender].escrow = 0;
+   function withdraw (address payable toPay ) onlyUser public{
+
+       assert(msg.sender == toPay);
+        userMap[toPay].status=false;
+        toPay.transfer(userMap[toPay].escrow);
+        userMap[toPay].escrow = 0;
         
     }
 
 
     function addTour (uint id, uint price) onlySeller public {
    
-        Tour storage new_tour;
+        Tour memory new_tour;
         new_tour.id = id;
         new_tour.price=price;
         new_tour.seller = msg.sender;

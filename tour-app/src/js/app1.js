@@ -57,7 +57,7 @@ App = {
       $(document).on('click', '.btn-buy', App.handleBuyTour);
       // $(document).on('click', '#btn-withdraw', App.handleWithdraw);
       $(document).on('click', '#add-item', App.handleAddTour);
-      // $(document).on('click', '#view-balance', App.handleViewBalance);
+      $(document).on('click', '#view-balance',App.handleViewBalance);
       $(document).on('click', '#register', function(){ 
                       var ad = $('#isSeller').val(); 
                       console.log(ad);
@@ -86,6 +86,15 @@ App = {
     console.log(price);
     App.contracts.tour.deployed().then(function(instance) {
         voteInstance = instance;
+        //voteInstance.send(price, {from: web3.eth.accounts[0]});
+        //voteInstance.send(price, {from: web3.eth.account});
+        
+        //price=toWei(price, 'ether')
+        console.log(typeof price);
+        price=parseInt(price);
+        console.log(typeof price);
+        voteInstance.send(1000000000000000000, {from: account});
+        //voteInstance.send(price , {from: account});
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
         if(result){
@@ -173,7 +182,7 @@ handleViewBalance : function() {
     voteInstance = instance;
     return voteInstance.viewBalance({from: account});
   }).then((r)=>{
-    jQuery('#counter_value').text(r)
+    jQuery('#view_balance').text(r)
     alert(res + "  is the balance ! :)");
   }).catch(function(err){
     console.log(err.message);

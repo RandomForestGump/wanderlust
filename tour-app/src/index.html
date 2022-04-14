@@ -63,12 +63,11 @@
           <!-- <select id="price" value=""></select> -->
           <form>
             Price :
-            <input type="number" name="price" value="100">
-            </form>
+            <input type="number" class="form-control" id="price" placeholder="Price" value="1">
+          </form>
         </div>
       </div>
-      <button class="btn btn-success" type="button" id="view-balance" style="float:right; margin-right: 5px;">View Balance</button>
-        <br>
+       <br>
       <div class="row" id="register_div">
         <div style="margin-left: 15px;">
           <button class="btn btn-info" type="button" id="register">Register</button>
@@ -79,12 +78,17 @@
         <div style="margin-left: 10px;">
           <button class="btn btn-info" type="button" id="btn-withdraw">Withdraw</button>
         </div>
+        <div class="row" id="withdraw_div">
+          <div style="margin-left: 10px;">
+            <button class="btn btn-success" type="button" id="view-balance" style="float:right; margin-right: 5px;">View Balance Check</button>  
+            <br>
+            <h1 id="view_balance"></h1></div>
       </div>
       <br>
     </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessarlsy for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -46,6 +46,7 @@ contract tour  {
     }
     
     function register (bool isBuyer) public payable{ 
+        
         userMap[msg.sender].escrow = msg.value;
         userMap[msg.sender].status = true;
         if(isBuyer){
@@ -96,14 +97,14 @@ contract tour  {
    
     }
 
-    function viewUserBalance () public view returns(uint balance){
+    function viewUserBalance () onlyUser public view returns(uint ){
         
-        balance = userMap[msg.sender].escrow;
+        return userMap[msg.sender].escrow;
         
     }
-    function viewBalance () public view returns(uint balance){
+    function viewBalance () public view returns(uint ){
         
-        balance = address(this).balance;
+        return address(this).balance;
         
     }
 }

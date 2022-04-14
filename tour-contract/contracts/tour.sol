@@ -45,7 +45,7 @@ contract tour  {
         
     }
     
-    function register (bool isBuyer) public payable{ 
+    function register (bool isBuyer) public payable { 
         
         userMap[msg.sender].escrow = msg.value;
         userMap[msg.sender].status = true;

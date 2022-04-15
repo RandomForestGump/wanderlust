@@ -59,12 +59,19 @@ contract tour  {
         
     }
         
-   function withdraw (address payable toPay ) onlyUser public{
+//    function withdraw (address payable toPay ) onlyUser public{
 
-       assert(msg.sender == toPay);
-        userMap[toPay].status=false;
-        toPay.transfer(userMap[toPay].escrow);
-        userMap[toPay].escrow = 0;
+//        assert(msg.sender == toPay);
+//         userMap[toPay].status=false;
+//         toPay.transfer(userMap[toPay].escrow);
+//         userMap[toPay].escrow = 0;
+        
+//     }
+    function withdraw (address payable  ) onlyUser public{
+
+        userMap[msg.sender].status=false;
+        msg.sender.transfer(userMap[msg.sender].escrow);
+        userMap[msg.sender].escrow = 0;
         
     }
 

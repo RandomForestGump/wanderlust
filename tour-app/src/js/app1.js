@@ -1,4 +1,5 @@
 App = {
+
     web3Provider: null,
     contracts: {},
     names: new Array(),
@@ -56,13 +57,20 @@ App = {
     bindEvents: function() {
       $(document).on('click', '.btn-buy', App.handleBuyTour);
       $(document).on('click', '#btn-withdraw',App.handleWithdraw);
-      $(document).on('click', '#add-item', App.handleAddTour);
+
+      $(document).on('click', '#add-item', function(){ 
+      
+        var price = $('#price').val(); 
+        var name = $('#name').val(); 
+        var desc = $('#description').val(); 
+        App.handleAddTour(name, desc, price);});
+
       $(document).on('click', '#view-balance',App.handleViewBalance);
       $(document).on('click', '#register', function(){ 
                       var ad = $('#isSeller').val(); 
                       console.log(ad);
                       console.log(price);
-                      var price = $('#price').val(); 
+                      var price = $('#escrow').val(); 
                       App.handleRegister(ad, price);});
     },
 
@@ -132,11 +140,42 @@ handleWithdraw: function(){
   })
 },
 
-handleAddTour: function(price){
+handleAddTour: function(name, description, price){
   var voteInstance;
   //Allocate _id-------------------------
   web3.eth.getAccounts(function(error, accounts) {
   var account = accounts[0];
+  //Get Name, description, price
+  const fs = require("fs");
+  // import {fs} from 'fs';
+  $.getJSON('../tourAttr.json', function(data) {
+
+    var _id=data.length;
+    var obj = {
+      "id": _id,
+      "name": name,
+      "description":description,
+      "picture": "images/Radar.png"
+    };
+    data.push(obj);
+
+    //Write file
+  
+    fs.writeFile('../tourAttr.json', jsonContent, 'utf8', function (err) {
+      if (err) {
+          console.log("An error occured while writing JSON Object to File.");
+          return console.log(err);
+      }
+   
+      console.log("JSON file has been saved.");
+  });
+
+  });
+
+  //Reload page
+
+  
+
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
       return voteInstance.addTour(_id, price, {from: account}); //input price

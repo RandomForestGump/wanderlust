@@ -145,12 +145,12 @@ handleAddTour: function(name, description, price){
   //Allocate _id-------------------------
   web3.eth.getAccounts(function(error, accounts) {
   var account = accounts[0];
+  var _id = -1;
   //Get Name, description, price
-  const fs = require("fs");
-  // import {fs} from 'fs';
+  console.log('Tried to import fs file');
+  
   $.getJSON('../tourAttr.json', function(data) {
-
-    var _id=data.length;
+    _id = data.length;
     var obj = {
       "id": _id,
       "name": name,
@@ -160,21 +160,12 @@ handleAddTour: function(name, description, price){
     data.push(obj);
 
     //Write file
-  
-    fs.writeFile('../tourAttr.json', jsonContent, 'utf8', function (err) {
-      if (err) {
-          console.log("An error occured while writing JSON Object to File.");
-          return console.log(err);
-      }
-   
-      console.log("JSON file has been saved.");
-  });
+    // $.post("/saveToFile",{data:JSON.stringify(data)});
+    $.post("/saveToFile",{data:JSON.stringify(data)});
 
   });
-
-  //Reload page
-
-  
+  console.log("ID is: ");
+  console.log(_id);
 
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
@@ -187,10 +178,10 @@ handleAddTour: function(name, description, price){
           alert( " Withdraw not done successfully due to revert")
       } else {
           alert( " Withdraw failed")
-      }   
+      } 
+    })  
   })
-  })
-},
+  },
 
 handleBuyTour: function(event){
   event.preventDefault();

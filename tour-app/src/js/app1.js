@@ -55,7 +55,7 @@ App = {
   
     bindEvents: function() {
       $(document).on('click', '.btn-buy', App.handleBuyTour);
-      // $(document).on('click', '#btn-withdraw', App.handleWithdraw);
+      $(document).on('click', '#btn-withdraw',App.handleWithdraw);
       $(document).on('click', '#add-item', App.handleAddTour);
       $(document).on('click', '#view-balance',App.handleViewBalance);
       $(document).on('click', '#register', function(){ 
@@ -91,9 +91,10 @@ App = {
         
         //price=toWei(price, 'ether')
         console.log(typeof price);
-        price=parseInt(price);
+        //price=parseInt(price);
         console.log(typeof price);
-        voteInstance.send(1000000000000000000, {from: account});
+        //voteInstance.send(1000000000000000000, {from: account});
+        price=1000000000000000000;
         //voteInstance.send(price , {from: account});
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
@@ -116,15 +117,16 @@ handleWithdraw: function(){
   var account = accounts[0];
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
-      return voteInstance.withdraw({from: account}); //input price
+      console.log("In Withdraw");
+      return voteInstance.withdraw(account,{from: account});
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
-          alert(addr + " Withdraw done successfully")
+          alert( " Withdraw done successfully")
           else
-          alert(addr + " Withdraw not done successfully due to revert")
+          alert(" Withdraw not done successfully due to revert")
       } else {
-          alert(addr + " Withdraw failed")
+          alert( err + " Withdraw failed")
       }   
   })
   })
@@ -180,10 +182,10 @@ handleViewBalance : function() {
   var voteInstance;
   App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.viewBalance({from: account});
+    return voteInstance.viewBalance();
   }).then((r)=>{
     jQuery('#view_balance').text(r)
-    alert(res + "  is the balance ! :)");
+    alert(r + "  is the balance ! :)");
   }).catch(function(err){
     console.log(err.message);
   })

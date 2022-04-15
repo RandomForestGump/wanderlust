@@ -10,14 +10,16 @@ App = {
         var proposalsRow = $('#proposalsRow');
         var proposalTemplate = $('#proposalTemplate');
   
-        for (i = 0; i < data.length; i ++) {
+        console.log(data.length);
+        for (i = 0; i < data.length; ++i ) {
           proposalTemplate.find('.panel-title').text(data[i].name);
           proposalTemplate.find('img').attr('src', data[i].picture);
           proposalTemplate.find('.btn-buy').attr('data-id', data[i].id);
-  
           proposalsRow.append(proposalTemplate.html());
+          console.log(data[i].name);
           App.names.push(data[i].name);
         }
+        console.log(App.names.length);
       });
       return App.initWeb3();
     },
@@ -93,7 +95,9 @@ App = {
         console.log(typeof price);
         price=parseInt(price);
         console.log(typeof price);
-        voteInstance.send(1000000000000000000, {from: account});
+        console.log(account);
+        price = 1000000000000000000;
+        // voteInstance.send(1000000000000000000, {from: account});
         //voteInstance.send(price , {from: account});
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
@@ -180,10 +184,10 @@ handleViewBalance : function() {
   var voteInstance;
   App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.viewBalance({from: account});
+    return voteInstance.viewBalance();
   }).then((r)=>{
     jQuery('#view_balance').text(r)
-    alert(res + "  is the balance ! :)");
+    alert(r + "  is the balance ! :)");
   }).catch(function(err){
     console.log(err.message);
   })

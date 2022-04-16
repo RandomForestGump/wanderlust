@@ -15,14 +15,14 @@ contract tour  {
     struct User{
         uint escrow;
         bool status;
-        Tour[] tours;
+        uint[] tours;
         bool isBuyer;
 
     }
     Tour[] tourInfo;
     mapping (address=>User) userMap;
     // mapping (address=>seller) public sellerMap;
-    mapping (uint=>Tour) metaId;
+    mapping (uint=>address) metaId;
 
     
     // modifiers or rules
@@ -78,29 +78,28 @@ contract tour  {
 
     function addTour (uint id, uint price) onlySeller public {
    
-        Tour memory new_tour;
-        new_tour.id = id;
-        new_tour.price=price;
-        new_tour.seller = msg.sender;
-        userMap[msg.sender].tours.push(new_tour);
-        metaId[id] = new_tour;
+        // Tour memory new_tour;
+        // new_tour.id = id;
+        // new_tour.price=price;
+        // new_tour.seller = msg.sender;
+        // userMap[msg.sender].tours.push(new_tour);
+        metaId[id] = msg.sender;
 
     }
 
-    function buyTour (uint id) onlyBuyer public {
+    function buyTour (uint id, uint price) onlyBuyer public {
         //Get seller
-        address seller = metaId[id].seller;
-        uint price = metaId[id].price;
-        // assert(price!=0);
+        address seller = metaId[id];
+        assert(price!=0);
         // //Get buyer balance
-        // assert(userMap[msg.sender].escrow - price >= 0);
+        assert(userMap[msg.sender].escrow - price >= 0);
         //Deduct buyer balance
         userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;
         //Add seller balance
         userMap[seller].escrow = userMap[seller].escrow + price;
         //Remove tour
-        userMap[msg.sender].tours.push(metaId[id]);
-        delete metaId[id];
+        userMap[msg.sender].tours.push(id);
+        // delete metaId[id];
    
     }
 

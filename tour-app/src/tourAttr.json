@@ -3,24 +3,48 @@
     "id": 0,
     "name": "Niagra",
     "description": "Lots of walk",
-    "picture": "images/Milli.png"
+    "picture": "images/Milli.png",
+    "price": 100000000000000000,
+    "status": true
   },
   {
     "id": 1,
     "name": "Murphy",
     "description": "Lots of walk",
-    "picture": "images/Murphy.png"
+    "picture": "images/Murphy.png",
+    "price": 100000000000000000,
+    "status": true
   },
   {
     "id": 2,
     "name": "Radar",
     "description": "Lots of walk",
-    "picture": "images/radar.png"
+    "picture": "images/radar.png",
+    "price": 100000000000000000,
+    "status": true
   },
   {
     "id": 3,
     "name": "Riley",
     "description": "Lots of walk",
-    "picture": "images/Riley.png"
+    "picture": "images/Riley.png",
+    "price": 100000000000000000,
+    "status": true
+  },
+  {
+    "id": 4,
+    "name": "Roman",
+    "description": "Niagra falls",
+    "picture": "images/Radar.png",
+    "price": "1000000000000000000",
+    "status": false
+  },
+  {
+    "id": 5,
+    "name": "Roman",
+    "description": "ABCD",
+    "picture": "images/Radar.png",
+    "price": "300000000000000000",
+    "status": false
   }
 ]

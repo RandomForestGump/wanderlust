@@ -12,12 +12,15 @@ App = {
         var proposalTemplate = $('#proposalTemplate');
   
         for (i = 0; i < data.length; i ++) {
+          if (data[i].status){
           proposalTemplate.find('.panel-title').text(data[i].name);
           proposalTemplate.find('img').attr('src', data[i].picture);
           proposalTemplate.find('.btn-buy').attr('data-id', data[i].id);
   
           proposalsRow.append(proposalTemplate.html());
           App.names.push(data[i].name);
+          }
+          
         }
       });
       return App.initWeb3();
@@ -102,7 +105,7 @@ App = {
         //price=parseInt(price);
         console.log(typeof price);
         //voteInstance.send(1000000000000000000, {from: account});
-        price=4000000000000000000;
+        price=2000000000000000000;
         //voteInstance.send(price , {from: account});
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
@@ -146,8 +149,6 @@ handleAddTour: function(name, description, price){
   web3.eth.getAccounts(function(error, accounts) {
   var account = accounts[0];
   var _id = -1;
-  console.log("The price of the item is:")
-  console.log(price)
   //Get Name, description, price
   
   $.getJSON('../tourAttr.json', function(data) {
@@ -156,7 +157,9 @@ handleAddTour: function(name, description, price){
       "id": _id,
       "name": name,
       "description":description,
-      "picture": "images/Radar.png"
+      "picture": "images/Radar.png",
+      "price": price,
+      "status": true
     };
     data.push(obj);
 
@@ -185,16 +188,17 @@ handleBuyTour: function(event){
   var voteInstance;
   var _id = parseInt($(event.target).data('id'));
   $.getJSON('../tourAttr.json', function(data) {
-    data.splice(_id, _id+1);
+    data[_id].status = false;
     web3.eth.getAccounts(function(error, accounts) {
       var account = accounts[0];
-      console.log(account);
-      console.log(_id);
-      
       App.contracts.tour.deployed().then(function(instance) {
           voteInstance = instance;
-          return voteInstance.buyTour(_id, {from: account}); //input price
+          console.log(data[_id].price);
+          console.log("From account is:");
+          console.log(account);
+          return voteInstance.buyTour(_id, data[_id].price, {from: account}); //input price
       }).then(function(result, err){
+        console.log(result);
           if(result){
               if(parseInt(result.receipt.status) == 1)
               alert( " Buy Tour done successfully")

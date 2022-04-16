@@ -46,5 +46,13 @@
     "picture": "images/Radar.png",
     "price": "300000000000000000",
     "status": false
+  },
+  {
+    "id": 6,
+    "name": "Palak",
+    "description": "Lol",
+    "picture": "images/Radar.png",
+    "price": 1000000000000000000,
+    "status": false
   }
 ]

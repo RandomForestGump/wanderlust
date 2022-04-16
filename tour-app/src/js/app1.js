@@ -67,6 +67,8 @@ App = {
         var desc = $('#description').val(); 
         App.handleAddTour(name, desc, price);});
 
+
+       $(document).on('click', '#view-userbalance',App.handleViewUserBalance);
       $(document).on('click', '#view-balance',App.handleViewBalance);
       $(document).on('click', '#register', function(){ 
                       var ad = $('#isSeller').val(); 
@@ -109,8 +111,11 @@ App = {
         }
     
        // price=App.web3.utils.toWei(price);
-       // price=utils1.toWei(price);
-        price=price*1000000000000000000;
+      //   $.get("/toWei",{data: price},function(data) {
+      //     price = data.price;
+      //     console.log(price);
+      //  });
+        price=parseInt(price*1000000000000000000);
         console.log("Price registered after conversion");
         console.log(price);
         //voteInstance.send(price , {from: account});
@@ -157,7 +162,7 @@ handleAddTour: function(name, description, price){
   var account = accounts[0];
   var _id = -1;
   //Get Name, description, price
-  
+  price=parseInt(price*1000000000000000000);
   $.getJSON('../tourAttr.json', function(data) {
     _id = data.length;
     var obj = {
@@ -238,15 +243,14 @@ handleViewBalance : function() {
   })
 },
 
-handleviewUserBalance : function() {
-  console.log("To get winner");
+handleViewUserBalance : function() {
   var voteInstance;
   App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.viewUserBalance({from: account});
+    return voteInstance.viewUserBalance();
   }).then((r)=>{
-    jQuery('#counter_value').text(r)
-    alert(res + "  is the balance ! :)");
+    jQuery('#view_user_balance').text(r)
+    alert(r + "  is the balance ! :)");
   }).catch(function(err){
     console.log(err.message);
   })

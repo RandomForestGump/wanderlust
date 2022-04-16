@@ -91,9 +91,9 @@ contract tour  {
         //Get seller
         address seller = metaId[id].seller;
         uint price = metaId[id].price;
-        assert(price!=0);
-        //Get buyer balance
-        assert(userMap[msg.sender].escrow - price >= 0);
+        // assert(price!=0);
+        // //Get buyer balance
+        // assert(userMap[msg.sender].escrow - price >= 0);
         //Deduct buyer balance
         userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;
         //Add seller balance

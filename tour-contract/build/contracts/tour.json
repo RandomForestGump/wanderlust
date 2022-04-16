@@ -103,21 +103,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"addTour\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"buyTour\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bool\",\"name\":\"isBuyer\",\"type\":\"bool\"}],\"name\":\"register\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"viewBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"viewUserBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/tour.sol\":\"tour\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/tour.sol\":{\"keccak256\":\"0x2e08895117dac21998ffeee5762968df32c0226b7523f5e32d377813e6d4df8b\",\"urls\":[\"bzz-raw://f52dfb849afa0c55655b93ab1fe3d23849687b2d757391f8b2e18b9c9e8cdb31\",\"dweb:/ipfs/QmZ6SFiRAieucZ2nyQTSX2M3CqKk2CnJrQaZuHZMxHWGgv\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610be1806100206000396000f3fe6080604052600436106100555760003560e01c806324ce2f671461005a5780633ff1e05b1461009557806351cff8d9146100c057806399af890414610111578063be12314514610156578063d7d8bcff14610186575b600080fd5b34801561006657600080fd5b506100936004803603602081101561007d57600080fd5b81019080803590602001909291905050506101b1565b005b3480156100a157600080fd5b506100aa61057f565b6040518082815260200191505060405180910390f35b3480156100cc57600080fd5b5061010f600480360360208110156100e357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610587565b005b34801561011d57600080fd5b506101546004803603604081101561013457600080fd5b810190808035906020019092919080359060200190929190505050610716565b005b6101846004803603602081101561016c57600080fd5b81019080803515159060200190929190505050610966565b005b34801561019257600080fd5b5061019b610acb565b6040518082815260200191505060405180910390f35b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156102605750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff165b61026957600080fd5b60006002600083815260200190815260200160002060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060006002600084815260200190815260200160002060010154905060008114156102ca57fe5b600081600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015403101561031957fe5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015403600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015401600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600201600260008581526020019081526020016000209080600181540180825580915050906001820390600052602060002090600302016000909192909190915060008201548160000155600182015481600101556002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506002600084815260200190815260200160002060008082016000905560018201600090556002820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690555050505050565b600047905090565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff161515146105e757600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff166108fc600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549081150290604051600060405180830381858888f193505050501580156106ca573d6000803e3d6000fd5b506000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555050565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156107c65750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff16155b6107cf57600080fd5b6107d7610b75565b828160000181815250508181602001818152505033816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206002018190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050508060026000858152602001908152602001600020600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550905050505050565b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555060018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055508015610a6c5760018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff021916908315150217905550610ac8565b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff0219169083151502179055505b50565b600060011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff16151514610b2d57600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60405180606001604052806000815260200160008152602001600073ffffffffffffffffffffffffffffffffffffffff168152509056fea265627a7a72315820bcb1e4d8f23810e1e8dacb0d1e0ba3ac1688bd4d57992db8b4270a6c26d307b764736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600436106100555760003560e01c806324ce2f671461005a5780633ff1e05b1461009557806351cff8d9146100c057806399af890414610111578063be12314514610156578063d7d8bcff14610186575b600080fd5b34801561006657600080fd5b506100936004803603602081101561007d57600080fd5b81019080803590602001909291905050506101b1565b005b3480156100a157600080fd5b506100aa61057f565b6040518082815260200191505060405180910390f35b3480156100cc57600080fd5b5061010f600480360360208110156100e357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610587565b005b34801561011d57600080fd5b506101546004803603604081101561013457600080fd5b810190808035906020019092919080359060200190929190505050610716565b005b6101846004803603602081101561016c57600080fd5b81019080803515159060200190929190505050610966565b005b34801561019257600080fd5b5061019b610acb565b6040518082815260200191505060405180910390f35b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156102605750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff165b61026957600080fd5b60006002600083815260200190815260200160002060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905060006002600084815260200190815260200160002060010154905060008114156102ca57fe5b600081600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015403101561031957fe5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015403600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000015401600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000181905550600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600201600260008581526020019081526020016000209080600181540180825580915050906001820390600052602060002090600302016000909192909190915060008201548160000155600182015481600101556002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506002600084815260200190815260200160002060008082016000905560018201600090556002820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690555050505050565b600047905090565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff161515146105e757600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff166108fc600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549081150290604051600060405180830381858888f193505050501580156106ca573d6000803e3d6000fd5b506000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555050565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156107c65750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff16155b6107cf57600080fd5b6107d7610b75565b828160000181815250508181602001818152505033816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206002018190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050508060026000858152602001908152602001600020600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550905050505050565b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555060018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055508015610a6c5760018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff021916908315150217905550610ac8565b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff0219169083151502179055505b50565b600060011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff16151514610b2d57600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60405180606001604052806000815260200160008152602001600073ffffffffffffffffffffffffffffffffffffffff168152509056fea265627a7a72315820bcb1e4d8f23810e1e8dacb0d1e0ba3ac1688bd4d57992db8b4270a6c26d307b764736f6c63430005100032",
-  "sourceMap": "61:2827:0:-;;;918:42;8:9:-1;5:2;;;30:1;27;20:12;5:2;918:42:0;61:2827;;;;;;",
-  "deployedSourceMap": "61:2827:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2062:569;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2062:569:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2062:569:0;;;;;;;;;;;;;;;;;:::i;:::-;;2773:113;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2773:113:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1566:209;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1566:209:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1566:209:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;1782:274;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1782:274:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1782:274:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;970:330;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;970:330:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;2637:131;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2637:131:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2062:569;608:4;580:32;;:7;:19;588:10;580:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;:63;;;;;616:7;:19;624:10;616:19;;;;;;;;;;;;;;;:27;;;;;;;;;;;;580:63;572:72;;;;;;2137:14;2154:6;:10;2161:2;2154:10;;;;;;;;;;;:17;;;;;;;;;;;;2137:34;;2181:10;2194:6;:10;2201:2;2194:10;;;;;;;;;;;:16;;;2181:29;;2234:1;2227:5;:8;;2220:16;;;;2319:1;2310:5;2281:7;:19;2289:10;2281:19;;;;;;;;;;;;;;;:26;;;:34;:39;;2274:47;;;;2420:5;2391:7;:19;2399:10;2391:19;;;;;;;;;;;;;;;:26;;;:34;2362:7;:19;2370:10;2362:19;;;;;;;;;;;;;;;:26;;:63;;;;2514:5;2489:7;:15;2497:6;2489:15;;;;;;;;;;;;;;;:22;;;:30;2464:7;:15;2472:6;2464:15;;;;;;;;;;;;;;;:22;;:55;;;;2551:7;:19;2559:10;2551:19;;;;;;;;;;;;;;;:25;;2582:6;:10;2589:2;2582:10;;;;;;;;;;;2551:42;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;2551:42:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2610:6;:10;2617:2;2610:10;;;;;;;;;;;;2603:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;654:1;;2062:569;:::o;2773:113::-;2817:4;2849:21;2842:28;;2773:113;:::o;1566:209::-;857:4;829:32;;:7;:19;837:10;829:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;821:41;;;;;;1657:5;1630:7;:19;1638:10;1630:19;;;;;;;;;;;;;;;:26;;;:32;;;;;;;;;;;;;;;;;;1672:10;:19;;:47;1692:7;:19;1700:10;1692:19;;;;;;;;;;;;;;;:26;;;1672:47;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1672:47:0;1758:1;1729:7;:19;1737:10;1729:19;;;;;;;;;;;;;;;:26;;:30;;;;1566:209;:::o;1782:274::-;733:4;705:32;;:7;:19;713:10;705:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;:64;;;;;742:7;:19;750:10;742:19;;;;;;;;;;;;;;;:27;;;;;;;;;;;;741:28;705:64;697:73;;;;;;1853:20;;:::i;:::-;1897:2;1883:8;:11;;:16;;;;;1924:5;1909:8;:14;;:20;;;;;1957:10;1939:8;:15;;:28;;;;;;;;;;;1977:7;:19;1985:10;1977:19;;;;;;;;;;;;;;;:25;;2008:8;1977:40;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1977:40:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2040:8;2027:6;:10;2034:2;2027:10;;;;;;;;;;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;780:1;1782:274;;:::o;970:330::-;1067:9;1038:7;:19;1046:10;1038:19;;;;;;;;;;;;;;;:26;;:38;;;;1115:4;1086:7;:19;1094:10;1086:19;;;;;;;;;;;;;;;:26;;;:33;;;;;;;;;;;;;;;;;;1132:7;1129:156;;;1184:4;1154:7;:19;1162:10;1154:19;;;;;;;;;;;;;;;:27;;;:34;;;;;;;;;;;;;;;;;;1129:156;;;1256:5;1226:7;:19;1234:10;1226:19;;;;;;;;;;;;;;;:27;;;:35;;;;;;;;;;;;;;;;;;1129:156;970:330;:::o;2637:131::-;2694:4;857;829:32;;:7;:19;837:10;829:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;821:41;;;;;;2726:7;:19;2734:10;2726:19;;;;;;;;;;;;;;;:26;;;2719:33;;2637:131;:::o;61:2827::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.2 <=0.6.0;\n// pragma solidity ^0.6.2;\n\ncontract tour  {\n   \n    // address chairperson;\n\n    struct Tour{ \n        uint id; // local consortium escrow\n        uint price;\n        address seller;\n        // uint hashOfDetails;\n    }\n\n    struct User{\n        uint escrow;\n        bool status;\n        Tour[] tours;\n        bool isBuyer;\n\n    }\n    Tour[] tourInfo;\n    mapping (address=>User) userMap;\n    // mapping (address=>seller) public sellerMap;\n    mapping (uint=>Tour) metaId;\n\n    \n    // modifiers or rules\n    modifier onlyBuyer{ \n        require(userMap[msg.sender].status==true && userMap[msg.sender].isBuyer);\n        _;\n    }\n    modifier onlySeller{ \n        require(userMap[msg.sender].status==true && !userMap[msg.sender].isBuyer);\n        _;\n    }\n    modifier onlyUser{ \n        require(userMap[msg.sender].status==true);\n        _;\n    }\n    \n    // constructor function\n    constructor () public   { \n\n        \n    }\n    \n    function register (bool isBuyer) public payable { \n        \n        userMap[msg.sender].escrow = msg.value;\n        userMap[msg.sender].status = true;\n        if(isBuyer){\n            userMap[msg.sender].isBuyer = true;\n        }\n        else{\n            userMap[msg.sender].isBuyer = false;\n            \n        }\n        \n    }\n        \n//    function withdraw (address payable toPay ) onlyUser public{\n\n//        assert(msg.sender == toPay);\n//         userMap[toPay].status=false;\n//         toPay.transfer(userMap[toPay].escrow);\n//         userMap[toPay].escrow = 0;\n        \n//     }\n    function withdraw (address payable  ) onlyUser public{\n\n        userMap[msg.sender].status=false;\n        msg.sender.transfer(userMap[msg.sender].escrow);\n        userMap[msg.sender].escrow = 0;\n        \n    }\n\n\n    function addTour (uint id, uint price) onlySeller public {\n   \n        Tour memory new_tour;\n        new_tour.id = id;\n        new_tour.price=price;\n        new_tour.seller = msg.sender;\n        userMap[msg.sender].tours.push(new_tour);\n        metaId[id] = new_tour;\n\n    }\n\n    function buyTour (uint id) onlyBuyer public {\n        //Get seller\n        address seller = metaId[id].seller;\n        uint price = metaId[id].price;\n        assert(price!=0);\n        //Get buyer balance\n        assert(userMap[msg.sender].escrow - price >= 0);\n        //Deduct buyer balance\n        userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;\n        //Add seller balance\n        userMap[seller].escrow = userMap[seller].escrow + price;\n        //Remove tour\n        userMap[msg.sender].tours.push(metaId[id]);\n        delete metaId[id];\n   \n    }\n\n    function viewUserBalance () onlyUser public view returns(uint ){\n        \n        return userMap[msg.sender].escrow;\n        \n    }\n    function viewBalance () public view returns(uint ){\n        \n        return address(this).balance;\n        \n    }\n}\n\n",
-  "sourcePath": "/Users/paleknaithani/wanderlust/tour-contract/contracts/tour.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"addTour\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"buyTour\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bool\",\"name\":\"isBuyer\",\"type\":\"bool\"}],\"name\":\"register\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"viewBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"viewUserBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/tour.sol\":\"tour\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/tour.sol\":{\"keccak256\":\"0x7c368a667226ba926de03578834bc325355154a8d1393b8a1ac7a95818caf792\",\"urls\":[\"bzz-raw://28fc7b4864e24c9c56a3485511f7a85edc5c5c3aa4f6b9266cfcc4c6784c3cb6\",\"dweb:/ipfs/QmbCqVwLNthUfDc2xJRVcSL6sEPHjmdtDVBGhmRGfdukJ3\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610926806100206000396000f3fe6080604052600436106100555760003560e01c806324ce2f671461005a5780633ff1e05b1461009557806351cff8d9146100c057806399af890414610111578063be12314514610156578063d7d8bcff14610186575b600080fd5b34801561006657600080fd5b506100936004803603602081101561007d57600080fd5b81019080803590602001909291905050506101b1565b005b3480156100a157600080fd5b506100aa6102c4565b6040518082815260200191505060405180910390f35b3480156100cc57600080fd5b5061010f600480360360208110156100e357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102cc565b005b34801561011d57600080fd5b506101546004803603604081101561013457600080fd5b81019080803590602001909291908035906020019092919050505061045b565b005b6101846004803603602081101561016c57600080fd5b810190808035151590602001909291905050506106ab565b005b34801561019257600080fd5b5061019b610810565b6040518082815260200191505060405180910390f35b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156102605750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff165b61026957600080fd5b60006002600083815260200190815260200160002060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050600060026000848152602001908152602001600020600101549050505050565b600047905090565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151461032c57600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff166108fc600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549081150290604051600060405180830381858888f1935050505015801561040f573d6000803e3d6000fd5b506000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555050565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff16151514801561050b5750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff16155b61051457600080fd5b61051c6108ba565b828160000181815250508181602001818152505033816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206002018190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050508060026000858152602001908152602001600020600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550905050505050565b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555060018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff02191690831515021790555080156107b15760018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff02191690831515021790555061080d565b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff0219169083151502179055505b50565b600060011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151461087257600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60405180606001604052806000815260200160008152602001600073ffffffffffffffffffffffffffffffffffffffff168152509056fea265627a7a72315820c4e5b06e0a5a1bd91a96fd4707234a1a8652df9ce2d15e41daf0e966a519bd5864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600436106100555760003560e01c806324ce2f671461005a5780633ff1e05b1461009557806351cff8d9146100c057806399af890414610111578063be12314514610156578063d7d8bcff14610186575b600080fd5b34801561006657600080fd5b506100936004803603602081101561007d57600080fd5b81019080803590602001909291905050506101b1565b005b3480156100a157600080fd5b506100aa6102c4565b6040518082815260200191505060405180910390f35b3480156100cc57600080fd5b5061010f600480360360208110156100e357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102cc565b005b34801561011d57600080fd5b506101546004803603604081101561013457600080fd5b81019080803590602001909291908035906020019092919050505061045b565b005b6101846004803603602081101561016c57600080fd5b810190808035151590602001909291905050506106ab565b005b34801561019257600080fd5b5061019b610810565b6040518082815260200191505060405180910390f35b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151480156102605750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff165b61026957600080fd5b60006002600083815260200190815260200160002060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050600060026000848152602001908152602001600020600101549050505050565b600047905090565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151461032c57600080fd5b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff166108fc600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549081150290604051600060405180830381858888f1935050505015801561040f573d6000803e3d6000fd5b506000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555050565b60011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff16151514801561050b5750600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160009054906101000a900460ff16155b61051457600080fd5b61051c6108ba565b828160000181815250508181602001818152505033816040019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff1681525050600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206002018190806001815401808255809150509060018203906000526020600020906003020160009091929091909150600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050508060026000858152602001908152602001600020600082015181600001556020820151816001015560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550905050505050565b34600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000018190555060018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160006101000a81548160ff02191690831515021790555080156107b15760018060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff02191690831515021790555061080d565b6000600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060030160006101000a81548160ff0219169083151502179055505b50565b600060011515600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160009054906101000a900460ff1615151461087257600080fd5b600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b60405180606001604052806000815260200160008152602001600073ffffffffffffffffffffffffffffffffffffffff168152509056fea265627a7a72315820c4e5b06e0a5a1bd91a96fd4707234a1a8652df9ce2d15e41daf0e966a519bd5864736f6c63430005100032",
+  "sourceMap": "61:2854:0:-;;;918:42;8:9:-1;5:2;;;30:1;27;20:12;5:2;918:42:0;61:2854;;;;;;",
+  "deployedSourceMap": "61:2854:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2062:596;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2062:596:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2062:596:0;;;;;;;;;;;;;;;;;:::i;:::-;;2800:113;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2800:113:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1566:209;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1566:209:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1566:209:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;1782:274;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1782:274:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1782:274:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;970:330;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;970:330:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;2664:131;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2664:131:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2062:596;608:4;580:32;;:7;:19;588:10;580:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;:63;;;;;616:7;:19;624:10;616:19;;;;;;;;;;;;;;;:27;;;;;;;;;;;;580:63;572:72;;;;;;2137:14;2154:6;:10;2161:2;2154:10;;;;;;;;;;;:17;;;;;;;;;;;;2137:34;;2181:10;2194:6;:10;2201:2;2194:10;;;;;;;;;;;:16;;;2181:29;;654:1;;2062:596;:::o;2800:113::-;2844:4;2876:21;2869:28;;2800:113;:::o;1566:209::-;857:4;829:32;;:7;:19;837:10;829:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;821:41;;;;;;1657:5;1630:7;:19;1638:10;1630:19;;;;;;;;;;;;;;;:26;;;:32;;;;;;;;;;;;;;;;;;1672:10;:19;;:47;1692:7;:19;1700:10;1692:19;;;;;;;;;;;;;;;:26;;;1672:47;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1672:47:0;1758:1;1729:7;:19;1737:10;1729:19;;;;;;;;;;;;;;;:26;;:30;;;;1566:209;:::o;1782:274::-;733:4;705:32;;:7;:19;713:10;705:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;:64;;;;;742:7;:19;750:10;742:19;;;;;;;;;;;;;;;:27;;;;;;;;;;;;741:28;705:64;697:73;;;;;;1853:20;;:::i;:::-;1897:2;1883:8;:11;;:16;;;;;1924:5;1909:8;:14;;:20;;;;;1957:10;1939:8;:15;;:28;;;;;;;;;;;1977:7;:19;1985:10;1977:19;;;;;;;;;;;;;;;:25;;2008:8;1977:40;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1977:40:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2040:8;2027:6;:10;2034:2;2027:10;;;;;;;;;;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;780:1;1782:274;;:::o;970:330::-;1067:9;1038:7;:19;1046:10;1038:19;;;;;;;;;;;;;;;:26;;:38;;;;1115:4;1086:7;:19;1094:10;1086:19;;;;;;;;;;;;;;;:26;;;:33;;;;;;;;;;;;;;;;;;1132:7;1129:156;;;1184:4;1154:7;:19;1162:10;1154:19;;;;;;;;;;;;;;;:27;;;:34;;;;;;;;;;;;;;;;;;1129:156;;;1256:5;1226:7;:19;1234:10;1226:19;;;;;;;;;;;;;;;:27;;;:35;;;;;;;;;;;;;;;;;;1129:156;970:330;:::o;2664:131::-;2721:4;857;829:32;;:7;:19;837:10;829:19;;;;;;;;;;;;;;;:26;;;;;;;;;;;;:32;;;821:41;;;;;;2753:7;:19;2761:10;2753:19;;;;;;;;;;;;;;;:26;;;2746:33;;2664:131;:::o;61:2854::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.2 <=0.6.0;\n// pragma solidity ^0.6.2;\n\ncontract tour  {\n   \n    // address chairperson;\n\n    struct Tour{ \n        uint id; // local consortium escrow\n        uint price;\n        address seller;\n        // uint hashOfDetails;\n    }\n\n    struct User{\n        uint escrow;\n        bool status;\n        Tour[] tours;\n        bool isBuyer;\n\n    }\n    Tour[] tourInfo;\n    mapping (address=>User) userMap;\n    // mapping (address=>seller) public sellerMap;\n    mapping (uint=>Tour) metaId;\n\n    \n    // modifiers or rules\n    modifier onlyBuyer{ \n        require(userMap[msg.sender].status==true && userMap[msg.sender].isBuyer);\n        _;\n    }\n    modifier onlySeller{ \n        require(userMap[msg.sender].status==true && !userMap[msg.sender].isBuyer);\n        _;\n    }\n    modifier onlyUser{ \n        require(userMap[msg.sender].status==true);\n        _;\n    }\n    \n    // constructor function\n    constructor () public   { \n\n        \n    }\n    \n    function register (bool isBuyer) public payable { \n        \n        userMap[msg.sender].escrow = msg.value;\n        userMap[msg.sender].status = true;\n        if(isBuyer){\n            userMap[msg.sender].isBuyer = true;\n        }\n        else{\n            userMap[msg.sender].isBuyer = false;\n            \n        }\n        \n    }\n        \n//    function withdraw (address payable toPay ) onlyUser public{\n\n//        assert(msg.sender == toPay);\n//         userMap[toPay].status=false;\n//         toPay.transfer(userMap[toPay].escrow);\n//         userMap[toPay].escrow = 0;\n        \n//     }\n    function withdraw (address payable  ) onlyUser public{\n\n        userMap[msg.sender].status=false;\n        msg.sender.transfer(userMap[msg.sender].escrow);\n        userMap[msg.sender].escrow = 0;\n        \n    }\n\n\n    function addTour (uint id, uint price) onlySeller public {\n   \n        Tour memory new_tour;\n        new_tour.id = id;\n        new_tour.price=price;\n        new_tour.seller = msg.sender;\n        userMap[msg.sender].tours.push(new_tour);\n        metaId[id] = new_tour;\n\n    }\n\n    function buyTour (uint id) onlyBuyer public {\n        //Get seller\n        address seller = metaId[id].seller;\n        uint price = metaId[id].price;\n        // assert(price!=0);\n        // //Get buyer balance\n        // assert(userMap[msg.sender].escrow - price >= 0);\n        //Deduct buyer balance\n        // userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;\n        // //Add seller balance\n        // userMap[seller].escrow = userMap[seller].escrow + price;\n        // //Remove tour\n        // userMap[msg.sender].tours.push(metaId[id]);\n        // delete metaId[id];\n   \n    }\n\n    function viewUserBalance () onlyUser public view returns(uint ){\n        \n        return userMap[msg.sender].escrow;\n        \n    }\n    function viewBalance () public view returns(uint ){\n        \n        return address(this).balance;\n        \n    }\n}\n\n",
+  "sourcePath": "/Users/rajatjain/Desktop/repos/wanderlust/tour-contract/contracts/tour.sol",
   "ast": {
     "absolutePath": "project:/contracts/tour.sol",
     "exportedSymbols": {
       "tour": [
-        322
+        262
       ]
     },
-    "id": 323,
+    "id": 263,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -140,9 +140,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 322,
+        "id": 262,
         "linearizedBaseContracts": [
-          322
+          262
         ],
         "name": "tour",
         "nodeType": "ContractDefinition",
@@ -233,7 +233,7 @@
             ],
             "name": "Tour",
             "nodeType": "StructDefinition",
-            "scope": 322,
+            "scope": 262,
             "src": "115:138:0",
             "visibility": "public"
           },
@@ -360,7 +360,7 @@
             ],
             "name": "User",
             "nodeType": "StructDefinition",
-            "scope": 322,
+            "scope": 262,
             "src": "259:105:0",
             "visibility": "public"
           },
@@ -369,7 +369,7 @@
             "id": 21,
             "name": "tourInfo",
             "nodeType": "VariableDeclaration",
-            "scope": 322,
+            "scope": 262,
             "src": "369:15:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -407,7 +407,7 @@
             "id": 25,
             "name": "userMap",
             "nodeType": "VariableDeclaration",
-            "scope": 322,
+            "scope": 262,
             "src": "390:31:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -454,7 +454,7 @@
             "id": 29,
             "name": "metaId",
             "nodeType": "VariableDeclaration",
-            "scope": 322,
+            "scope": 262,
             "src": "478:27:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -554,7 +554,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "src": "588:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -654,7 +654,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 337,
+                                "referencedDeclaration": 277,
                                 "src": "624:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -718,10 +718,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        340,
-                        341
+                        280,
+                        281
                       ],
-                      "referencedDeclaration": 340,
+                      "referencedDeclaration": 280,
                       "src": "572:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -824,7 +824,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "src": "713:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -935,7 +935,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "src": "750:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -1004,10 +1004,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        340,
-                        341
+                        280,
+                        281
                       ],
-                      "referencedDeclaration": 340,
+                      "referencedDeclaration": 280,
                       "src": "697:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1099,7 +1099,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 337,
+                                "referencedDeclaration": 277,
                                 "src": "837:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -1183,10 +1183,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        340,
-                        341
+                        280,
+                        281
                       ],
-                      "referencedDeclaration": 340,
+                      "referencedDeclaration": 280,
                       "src": "821:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1257,7 +1257,7 @@
               "parameters": [],
               "src": "942:0:0"
             },
-            "scope": 322,
+            "scope": 262,
             "src": "918:42:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1303,7 +1303,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 337,
+                            "referencedDeclaration": 277,
                             "src": "1046:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1359,7 +1359,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 337,
+                        "referencedDeclaration": 277,
                         "src": "1067:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1424,7 +1424,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 337,
+                            "referencedDeclaration": 277,
                             "src": "1094:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1553,7 +1553,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "src": "1234:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -1673,7 +1673,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "src": "1162:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -1800,7 +1800,7 @@
               "parameters": [],
               "src": "1018:0:0"
             },
-            "scope": 322,
+            "scope": 262,
             "src": "970:330:0",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1846,7 +1846,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 337,
+                            "referencedDeclaration": 277,
                             "src": "1638:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1952,7 +1952,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 337,
+                              "referencedDeclaration": 277,
                               "src": "1700:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2014,7 +2014,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 337,
+                          "referencedDeclaration": 277,
                           "src": "1672:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2101,7 +2101,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 337,
+                            "referencedDeclaration": 277,
                             "src": "1737:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2246,7 +2246,7 @@
               "parameters": [],
               "src": "1619:0:0"
             },
-            "scope": 322,
+            "scope": 262,
             "src": "1566:209:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2468,7 +2468,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 337,
+                        "referencedDeclaration": 277,
                         "src": "1957:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2550,7 +2550,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 337,
+                              "referencedDeclaration": 277,
                               "src": "1985:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2795,7 +2795,7 @@
               "parameters": [],
               "src": "1839:0:0"
             },
-            "scope": 322,
+            "scope": 262,
             "src": "1782:274:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2803,9 +2803,9 @@
           },
           {
             "body": {
-              "id": 295,
+              "id": 235,
               "nodeType": "Block",
-              "src": "2106:525:0",
+              "src": "2106:552:0",
               "statements": [
                 {
                   "assignments": [
@@ -2817,7 +2817,7 @@
                       "id": 222,
                       "name": "seller",
                       "nodeType": "VariableDeclaration",
-                      "scope": 295,
+                      "scope": 235,
                       "src": "2137:14:0",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2910,7 +2910,7 @@
                       "id": 229,
                       "name": "price",
                       "nodeType": "VariableDeclaration",
-                      "scope": 295,
+                      "scope": 235,
                       "src": "2181:10:0",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2991,861 +2991,11 @@
                   },
                   "nodeType": "VariableDeclarationStatement",
                   "src": "2181:29:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 238,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "id": 236,
-                          "name": "price",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 229,
-                          "src": "2227:5:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": "!=",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "30",
-                          "id": 237,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "2234:1:0",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_0_by_1",
-                            "typeString": "int_const 0"
-                          },
-                          "value": "0"
-                        },
-                        "src": "2227:8:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      ],
-                      "id": 235,
-                      "name": "assert",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 326,
-                      "src": "2220:6:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
-                        "typeString": "function (bool) pure"
-                      }
-                    },
-                    "id": 239,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "2220:16:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 240,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2220:16:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 250,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "commonType": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          "id": 248,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "leftExpression": {
-                            "argumentTypes": null,
-                            "expression": {
-                              "argumentTypes": null,
-                              "baseExpression": {
-                                "argumentTypes": null,
-                                "id": 242,
-                                "name": "userMap",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 25,
-                                "src": "2281:7:0",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                                  "typeString": "mapping(address => struct tour.User storage ref)"
-                                }
-                              },
-                              "id": 245,
-                              "indexExpression": {
-                                "argumentTypes": null,
-                                "expression": {
-                                  "argumentTypes": null,
-                                  "id": 243,
-                                  "name": "msg",
-                                  "nodeType": "Identifier",
-                                  "overloadedDeclarations": [],
-                                  "referencedDeclaration": 337,
-                                  "src": "2289:3:0",
-                                  "typeDescriptions": {
-                                    "typeIdentifier": "t_magic_message",
-                                    "typeString": "msg"
-                                  }
-                                },
-                                "id": 244,
-                                "isConstant": false,
-                                "isLValue": false,
-                                "isPure": false,
-                                "lValueRequested": false,
-                                "memberName": "sender",
-                                "nodeType": "MemberAccess",
-                                "referencedDeclaration": null,
-                                "src": "2289:10:0",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_address_payable",
-                                  "typeString": "address payable"
-                                }
-                              },
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "nodeType": "IndexAccess",
-                              "src": "2281:19:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_User_$18_storage",
-                                "typeString": "struct tour.User storage ref"
-                              }
-                            },
-                            "id": 246,
-                            "isConstant": false,
-                            "isLValue": true,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "escrow",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10,
-                            "src": "2281:26:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "nodeType": "BinaryOperation",
-                          "operator": "-",
-                          "rightExpression": {
-                            "argumentTypes": null,
-                            "id": 247,
-                            "name": "price",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 229,
-                            "src": "2310:5:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "src": "2281:34:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": ">=",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "30",
-                          "id": 249,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "2319:1:0",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_0_by_1",
-                            "typeString": "int_const 0"
-                          },
-                          "value": "0"
-                        },
-                        "src": "2281:39:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      ],
-                      "id": 241,
-                      "name": "assert",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 326,
-                      "src": "2274:6:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
-                        "typeString": "function (bool) pure"
-                      }
-                    },
-                    "id": 251,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "2274:47:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 252,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2274:47:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 265,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "expression": {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 253,
-                          "name": "userMap",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 25,
-                          "src": "2362:7:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                            "typeString": "mapping(address => struct tour.User storage ref)"
-                          }
-                        },
-                        "id": 256,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 254,
-                            "name": "msg",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 337,
-                            "src": "2370:3:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_magic_message",
-                              "typeString": "msg"
-                            }
-                          },
-                          "id": 255,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "sender",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": null,
-                          "src": "2370:10:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address_payable",
-                            "typeString": "address payable"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "2362:19:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_User_$18_storage",
-                          "typeString": "struct tour.User storage ref"
-                        }
-                      },
-                      "id": 257,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "memberName": "escrow",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10,
-                      "src": "2362:26:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "commonType": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      },
-                      "id": 264,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "leftExpression": {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "baseExpression": {
-                            "argumentTypes": null,
-                            "id": 258,
-                            "name": "userMap",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 25,
-                            "src": "2391:7:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                              "typeString": "mapping(address => struct tour.User storage ref)"
-                            }
-                          },
-                          "id": 261,
-                          "indexExpression": {
-                            "argumentTypes": null,
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 259,
-                              "name": "msg",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 337,
-                              "src": "2399:3:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_magic_message",
-                                "typeString": "msg"
-                              }
-                            },
-                            "id": 260,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "sender",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": null,
-                            "src": "2399:10:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_address_payable",
-                              "typeString": "address payable"
-                            }
-                          },
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "nodeType": "IndexAccess",
-                          "src": "2391:19:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$18_storage",
-                            "typeString": "struct tour.User storage ref"
-                          }
-                        },
-                        "id": 262,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "escrow",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 10,
-                        "src": "2391:26:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "nodeType": "BinaryOperation",
-                      "operator": "-",
-                      "rightExpression": {
-                        "argumentTypes": null,
-                        "id": 263,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "2420:5:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "src": "2391:34:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "2362:63:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 266,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2362:63:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 277,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "expression": {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 267,
-                          "name": "userMap",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 25,
-                          "src": "2464:7:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                            "typeString": "mapping(address => struct tour.User storage ref)"
-                          }
-                        },
-                        "id": 269,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "id": 268,
-                          "name": "seller",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 222,
-                          "src": "2472:6:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "2464:15:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_User_$18_storage",
-                          "typeString": "struct tour.User storage ref"
-                        }
-                      },
-                      "id": 270,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "memberName": "escrow",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10,
-                      "src": "2464:22:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "commonType": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      },
-                      "id": 276,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "leftExpression": {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "baseExpression": {
-                            "argumentTypes": null,
-                            "id": 271,
-                            "name": "userMap",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 25,
-                            "src": "2489:7:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                              "typeString": "mapping(address => struct tour.User storage ref)"
-                            }
-                          },
-                          "id": 273,
-                          "indexExpression": {
-                            "argumentTypes": null,
-                            "id": 272,
-                            "name": "seller",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 222,
-                            "src": "2497:6:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_address",
-                              "typeString": "address"
-                            }
-                          },
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "nodeType": "IndexAccess",
-                          "src": "2489:15:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$18_storage",
-                            "typeString": "struct tour.User storage ref"
-                          }
-                        },
-                        "id": 274,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "escrow",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 10,
-                        "src": "2489:22:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "nodeType": "BinaryOperation",
-                      "operator": "+",
-                      "rightExpression": {
-                        "argumentTypes": null,
-                        "id": 275,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 229,
-                        "src": "2514:5:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "src": "2489:30:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "2464:55:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 278,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2464:55:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 285,
-                          "name": "metaId",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 29,
-                          "src": "2582:6:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tour_$8_storage_$",
-                            "typeString": "mapping(uint256 => struct tour.Tour storage ref)"
-                          }
-                        },
-                        "id": 287,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "id": 286,
-                          "name": "id",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 216,
-                          "src": "2589:2:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "2582:10:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Tour_$8_storage",
-                          "typeString": "struct tour.Tour storage ref"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_struct$_Tour_$8_storage",
-                          "typeString": "struct tour.Tour storage ref"
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "baseExpression": {
-                            "argumentTypes": null,
-                            "id": 279,
-                            "name": "userMap",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 25,
-                            "src": "2551:7:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
-                              "typeString": "mapping(address => struct tour.User storage ref)"
-                            }
-                          },
-                          "id": 282,
-                          "indexExpression": {
-                            "argumentTypes": null,
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 280,
-                              "name": "msg",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 337,
-                              "src": "2559:3:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_magic_message",
-                                "typeString": "msg"
-                              }
-                            },
-                            "id": 281,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "sender",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": null,
-                            "src": "2559:10:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_address_payable",
-                              "typeString": "address payable"
-                            }
-                          },
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "nodeType": "IndexAccess",
-                          "src": "2551:19:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$18_storage",
-                            "typeString": "struct tour.User storage ref"
-                          }
-                        },
-                        "id": 283,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "tours",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 15,
-                        "src": "2551:25:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Tour_$8_storage_$dyn_storage",
-                          "typeString": "struct tour.Tour storage ref[] storage ref"
-                        }
-                      },
-                      "id": 284,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "push",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": null,
-                      "src": "2551:30:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Tour_$8_storage_$returns$_t_uint256_$",
-                        "typeString": "function (struct tour.Tour storage ref) returns (uint256)"
-                      }
-                    },
-                    "id": 288,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "2551:42:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 289,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2551:42:0"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 293,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "nodeType": "UnaryOperation",
-                    "operator": "delete",
-                    "prefix": true,
-                    "src": "2603:17:0",
-                    "subExpression": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 290,
-                        "name": "metaId",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 29,
-                        "src": "2610:6:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tour_$8_storage_$",
-                          "typeString": "mapping(uint256 => struct tour.Tour storage ref)"
-                        }
-                      },
-                      "id": 292,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "id": 291,
-                        "name": "id",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 216,
-                        "src": "2617:2:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "nodeType": "IndexAccess",
-                      "src": "2610:10:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Tour_$8_storage",
-                        "typeString": "struct tour.Tour storage ref"
-                      }
-                    },
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 294,
-                  "nodeType": "ExpressionStatement",
-                  "src": "2603:17:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 296,
+            "id": 236,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -3880,7 +3030,7 @@
                   "id": 216,
                   "name": "id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 296,
+                  "scope": 236,
                   "src": "2080:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3910,17 +3060,17 @@
               "parameters": [],
               "src": "2106:0:0"
             },
-            "scope": 322,
-            "src": "2062:569:0",
+            "scope": 262,
+            "src": "2062:596:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 309,
+              "id": 249,
               "nodeType": "Block",
-              "src": "2700:68:0",
+              "src": "2727:68:0",
               "statements": [
                 {
                   "expression": {
@@ -3929,34 +3079,34 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 303,
+                        "id": 243,
                         "name": "userMap",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 25,
-                        "src": "2726:7:0",
+                        "src": "2753:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_struct$_User_$18_storage_$",
                           "typeString": "mapping(address => struct tour.User storage ref)"
                         }
                       },
-                      "id": 306,
+                      "id": 246,
                       "indexExpression": {
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 304,
+                          "id": 244,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 337,
-                          "src": "2734:3:0",
+                          "referencedDeclaration": 277,
+                          "src": "2761:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 305,
+                        "id": 245,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3964,7 +3114,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "2734:10:0",
+                        "src": "2761:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -3975,13 +3125,13 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "2726:19:0",
+                      "src": "2753:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$18_storage",
                         "typeString": "struct tour.User storage ref"
                       }
                     },
-                    "id": 307,
+                    "id": 247,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
@@ -3989,63 +3139,63 @@
                     "memberName": "escrow",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 10,
-                    "src": "2726:26:0",
+                    "src": "2753:26:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 302,
-                  "id": 308,
+                  "functionReturnParameters": 242,
+                  "id": 248,
                   "nodeType": "Return",
-                  "src": "2719:33:0"
+                  "src": "2746:33:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 310,
+            "id": 250,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 299,
+                "id": 239,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 298,
+                  "id": 238,
                   "name": "onlyUser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 84,
-                  "src": "2665:8:0",
+                  "src": "2692:8:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "2665:8:0"
+                "src": "2692:8:0"
               }
             ],
             "name": "viewUserBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 297,
+              "id": 237,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2662:2:0"
+              "src": "2689:2:0"
             },
             "returnParameters": {
-              "id": 302,
+              "id": 242,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 301,
+                  "id": 241,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 310,
-                  "src": "2694:4:0",
+                  "scope": 250,
+                  "src": "2721:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4053,10 +3203,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 300,
+                    "id": 240,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2694:4:0",
+                    "src": "2721:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4066,19 +3216,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2693:7:0"
+              "src": "2720:7:0"
             },
-            "scope": 322,
-            "src": "2637:131:0",
+            "scope": 262,
+            "src": "2664:131:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 320,
+              "id": 260,
               "nodeType": "Block",
-              "src": "2823:63:0",
+              "src": "2850:63:0",
               "statements": [
                 {
                   "expression": {
@@ -4088,14 +3238,14 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 316,
+                          "id": 256,
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 351,
-                          "src": "2857:4:0",
+                          "referencedDeclaration": 291,
+                          "src": "2884:4:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_tour_$322",
+                            "typeIdentifier": "t_contract$_tour_$262",
                             "typeString": "contract tour"
                           }
                         }
@@ -4103,24 +3253,24 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_tour_$322",
+                            "typeIdentifier": "t_contract$_tour_$262",
                             "typeString": "contract tour"
                           }
                         ],
-                        "id": 315,
+                        "id": 255,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "ElementaryTypeNameExpression",
-                        "src": "2849:7:0",
+                        "src": "2876:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_address_$",
                           "typeString": "type(address)"
                         },
                         "typeName": "address"
                       },
-                      "id": 317,
+                      "id": 257,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4128,13 +3278,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "2849:13:0",
+                      "src": "2876:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 318,
+                    "id": 258,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4142,43 +3292,43 @@
                     "memberName": "balance",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "2849:21:0",
+                    "src": "2876:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 314,
-                  "id": 319,
+                  "functionReturnParameters": 254,
+                  "id": 259,
                   "nodeType": "Return",
-                  "src": "2842:28:0"
+                  "src": "2869:28:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 321,
+            "id": 261,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "viewBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 311,
+              "id": 251,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2794:2:0"
+              "src": "2821:2:0"
             },
             "returnParameters": {
-              "id": 314,
+              "id": 254,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 313,
+                  "id": 253,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 321,
-                  "src": "2817:4:0",
+                  "scope": 261,
+                  "src": "2844:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4186,10 +3336,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 312,
+                    "id": 252,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2817:4:0",
+                    "src": "2844:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4199,27 +3349,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2816:7:0"
+              "src": "2843:7:0"
             },
-            "scope": 322,
-            "src": "2773:113:0",
+            "scope": 262,
+            "src": "2800:113:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 323,
-        "src": "61:2827:0"
+        "scope": 263,
+        "src": "61:2854:0"
       }
     ],
-    "src": "0:2890:0"
+    "src": "0:2917:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/tour.sol",
       "exportedSymbols": {
         "tour": [
-          322
+          262
         ]
       }
     },
@@ -4252,17 +3402,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            322
+            262
           ],
           "name": "tour",
-          "scope": 323
+          "scope": 263
         },
         "children": [
           {
             "attributes": {
               "canonicalName": "tour.Tour",
               "name": "Tour",
-              "scope": 322,
+              "scope": 262,
               "visibility": "public"
             },
             "children": [
@@ -4354,7 +3504,7 @@
             "attributes": {
               "canonicalName": "tour.User",
               "name": "User",
-              "scope": 322,
+              "scope": 262,
               "visibility": "public"
             },
             "children": [
@@ -4484,7 +3634,7 @@
             "attributes": {
               "constant": false,
               "name": "tourInfo",
-              "scope": 322,
+              "scope": 262,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "struct tour.Tour[]",
@@ -4523,7 +3673,7 @@
             "attributes": {
               "constant": false,
               "name": "userMap",
-              "scope": 322,
+              "scope": 262,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => struct tour.User)",
@@ -4570,7 +3720,7 @@
             "attributes": {
               "constant": false,
               "name": "metaId",
-              "scope": 322,
+              "scope": 262,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => struct tour.Tour)",
@@ -4659,10 +3809,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                340,
-                                341
+                                280,
+                                281
                               ],
-                              "referencedDeclaration": 340,
+                              "referencedDeclaration": 280,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -4754,7 +3904,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 337,
+                                                  "referencedDeclaration": 277,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -4853,7 +4003,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 337,
+                                              "referencedDeclaration": 277,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -4952,10 +4102,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                340,
-                                341
+                                280,
+                                281
                               ],
-                              "referencedDeclaration": 340,
+                              "referencedDeclaration": 280,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -5047,7 +4197,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 337,
+                                                  "referencedDeclaration": 277,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5158,7 +4308,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 337,
+                                                  "referencedDeclaration": 277,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5262,10 +4412,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                340,
-                                341
+                                280,
+                                281
                               ],
-                              "referencedDeclaration": 340,
+                              "referencedDeclaration": 280,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -5342,7 +4492,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 337,
+                                              "referencedDeclaration": 277,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -5422,7 +4572,7 @@
                 null
               ],
               "name": "",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -5476,7 +4626,7 @@
                 null
               ],
               "name": "register",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "payable",
               "superFunction": null,
               "visibility": "public"
@@ -5595,7 +4745,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 337,
+                                          "referencedDeclaration": 277,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -5636,7 +4786,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -5726,7 +4876,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 337,
+                                          "referencedDeclaration": 277,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -5861,7 +5011,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 337,
+                                                  "referencedDeclaration": 277,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5985,7 +5135,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 337,
+                                                  "referencedDeclaration": 277,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -6062,7 +5212,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "withdraw",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -6206,7 +5356,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 337,
+                                          "referencedDeclaration": 277,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -6308,7 +5458,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 337,
+                                      "referencedDeclaration": 277,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -6380,7 +5530,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 337,
+                                          "referencedDeclaration": 277,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -6480,7 +5630,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 337,
+                                          "referencedDeclaration": 277,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -6547,7 +5697,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "addTour",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -6888,7 +6038,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 337,
+                                  "referencedDeclaration": 277,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -6999,7 +6149,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 337,
+                                              "referencedDeclaration": 277,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -7148,7 +6298,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "buyTour",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -7160,7 +6310,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "id",
-                      "scope": 296,
+                      "scope": 236,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -7235,7 +6385,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "seller",
-                          "scope": 295,
+                          "scope": 235,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "address",
@@ -7334,7 +6484,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "price",
-                          "scope": 295,
+                          "scope": 235,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -7420,931 +6570,16 @@
                     "id": 234,
                     "name": "VariableDeclarationStatement",
                     "src": "2181:29:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "isStructConstructorCall": false,
-                          "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
-                          "type": "tuple()",
-                          "type_conversion": false
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_bool",
-                                  "typeString": "bool"
-                                }
-                              ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 326,
-                              "type": "function (bool) pure",
-                              "value": "assert"
-                            },
-                            "id": 235,
-                            "name": "Identifier",
-                            "src": "2220:6:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "commonType": {
-                                "typeIdentifier": "t_uint256",
-                                "typeString": "uint256"
-                              },
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "operator": "!=",
-                              "type": "bool"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 229,
-                                  "type": "uint256",
-                                  "value": "price"
-                                },
-                                "id": 236,
-                                "name": "Identifier",
-                                "src": "2227:5:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "hexvalue": "30",
-                                  "isConstant": false,
-                                  "isLValue": false,
-                                  "isPure": true,
-                                  "lValueRequested": false,
-                                  "subdenomination": null,
-                                  "token": "number",
-                                  "type": "int_const 0",
-                                  "value": "0"
-                                },
-                                "id": 237,
-                                "name": "Literal",
-                                "src": "2234:1:0"
-                              }
-                            ],
-                            "id": 238,
-                            "name": "BinaryOperation",
-                            "src": "2227:8:0"
-                          }
-                        ],
-                        "id": 239,
-                        "name": "FunctionCall",
-                        "src": "2220:16:0"
-                      }
-                    ],
-                    "id": 240,
-                    "name": "ExpressionStatement",
-                    "src": "2220:16:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "isStructConstructorCall": false,
-                          "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
-                          "type": "tuple()",
-                          "type_conversion": false
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_bool",
-                                  "typeString": "bool"
-                                }
-                              ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 326,
-                              "type": "function (bool) pure",
-                              "value": "assert"
-                            },
-                            "id": 241,
-                            "name": "Identifier",
-                            "src": "2274:6:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "commonType": {
-                                "typeIdentifier": "t_uint256",
-                                "typeString": "uint256"
-                              },
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "operator": ">=",
-                              "type": "bool"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "commonType": {
-                                    "typeIdentifier": "t_uint256",
-                                    "typeString": "uint256"
-                                  },
-                                  "isConstant": false,
-                                  "isLValue": false,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "operator": "-",
-                                  "type": "uint256"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "isConstant": false,
-                                      "isLValue": true,
-                                      "isPure": false,
-                                      "lValueRequested": false,
-                                      "member_name": "escrow",
-                                      "referencedDeclaration": 10,
-                                      "type": "uint256"
-                                    },
-                                    "children": [
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "isConstant": false,
-                                          "isLValue": true,
-                                          "isPure": false,
-                                          "lValueRequested": false,
-                                          "type": "struct tour.User storage ref"
-                                        },
-                                        "children": [
-                                          {
-                                            "attributes": {
-                                              "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
-                                              "referencedDeclaration": 25,
-                                              "type": "mapping(address => struct tour.User storage ref)",
-                                              "value": "userMap"
-                                            },
-                                            "id": 242,
-                                            "name": "Identifier",
-                                            "src": "2281:7:0"
-                                          },
-                                          {
-                                            "attributes": {
-                                              "argumentTypes": null,
-                                              "isConstant": false,
-                                              "isLValue": false,
-                                              "isPure": false,
-                                              "lValueRequested": false,
-                                              "member_name": "sender",
-                                              "referencedDeclaration": null,
-                                              "type": "address payable"
-                                            },
-                                            "children": [
-                                              {
-                                                "attributes": {
-                                                  "argumentTypes": null,
-                                                  "overloadedDeclarations": [
-                                                    null
-                                                  ],
-                                                  "referencedDeclaration": 337,
-                                                  "type": "msg",
-                                                  "value": "msg"
-                                                },
-                                                "id": 243,
-                                                "name": "Identifier",
-                                                "src": "2289:3:0"
-                                              }
-                                            ],
-                                            "id": 244,
-                                            "name": "MemberAccess",
-                                            "src": "2289:10:0"
-                                          }
-                                        ],
-                                        "id": 245,
-                                        "name": "IndexAccess",
-                                        "src": "2281:19:0"
-                                      }
-                                    ],
-                                    "id": 246,
-                                    "name": "MemberAccess",
-                                    "src": "2281:26:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 229,
-                                      "type": "uint256",
-                                      "value": "price"
-                                    },
-                                    "id": 247,
-                                    "name": "Identifier",
-                                    "src": "2310:5:0"
-                                  }
-                                ],
-                                "id": 248,
-                                "name": "BinaryOperation",
-                                "src": "2281:34:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "hexvalue": "30",
-                                  "isConstant": false,
-                                  "isLValue": false,
-                                  "isPure": true,
-                                  "lValueRequested": false,
-                                  "subdenomination": null,
-                                  "token": "number",
-                                  "type": "int_const 0",
-                                  "value": "0"
-                                },
-                                "id": 249,
-                                "name": "Literal",
-                                "src": "2319:1:0"
-                              }
-                            ],
-                            "id": 250,
-                            "name": "BinaryOperation",
-                            "src": "2281:39:0"
-                          }
-                        ],
-                        "id": 251,
-                        "name": "FunctionCall",
-                        "src": "2274:47:0"
-                      }
-                    ],
-                    "id": 252,
-                    "name": "ExpressionStatement",
-                    "src": "2274:47:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "uint256"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": true,
-                              "member_name": "escrow",
-                              "referencedDeclaration": 10,
-                              "type": "uint256"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "type": "struct tour.User storage ref"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 25,
-                                      "type": "mapping(address => struct tour.User storage ref)",
-                                      "value": "userMap"
-                                    },
-                                    "id": 253,
-                                    "name": "Identifier",
-                                    "src": "2362:7:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "isConstant": false,
-                                      "isLValue": false,
-                                      "isPure": false,
-                                      "lValueRequested": false,
-                                      "member_name": "sender",
-                                      "referencedDeclaration": null,
-                                      "type": "address payable"
-                                    },
-                                    "children": [
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
-                                          "referencedDeclaration": 337,
-                                          "type": "msg",
-                                          "value": "msg"
-                                        },
-                                        "id": 254,
-                                        "name": "Identifier",
-                                        "src": "2370:3:0"
-                                      }
-                                    ],
-                                    "id": 255,
-                                    "name": "MemberAccess",
-                                    "src": "2370:10:0"
-                                  }
-                                ],
-                                "id": 256,
-                                "name": "IndexAccess",
-                                "src": "2362:19:0"
-                              }
-                            ],
-                            "id": 257,
-                            "name": "MemberAccess",
-                            "src": "2362:26:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "commonType": {
-                                "typeIdentifier": "t_uint256",
-                                "typeString": "uint256"
-                              },
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "operator": "-",
-                              "type": "uint256"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "member_name": "escrow",
-                                  "referencedDeclaration": 10,
-                                  "type": "uint256"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "isConstant": false,
-                                      "isLValue": true,
-                                      "isPure": false,
-                                      "lValueRequested": false,
-                                      "type": "struct tour.User storage ref"
-                                    },
-                                    "children": [
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
-                                          "referencedDeclaration": 25,
-                                          "type": "mapping(address => struct tour.User storage ref)",
-                                          "value": "userMap"
-                                        },
-                                        "id": 258,
-                                        "name": "Identifier",
-                                        "src": "2391:7:0"
-                                      },
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "isConstant": false,
-                                          "isLValue": false,
-                                          "isPure": false,
-                                          "lValueRequested": false,
-                                          "member_name": "sender",
-                                          "referencedDeclaration": null,
-                                          "type": "address payable"
-                                        },
-                                        "children": [
-                                          {
-                                            "attributes": {
-                                              "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
-                                              "referencedDeclaration": 337,
-                                              "type": "msg",
-                                              "value": "msg"
-                                            },
-                                            "id": 259,
-                                            "name": "Identifier",
-                                            "src": "2399:3:0"
-                                          }
-                                        ],
-                                        "id": 260,
-                                        "name": "MemberAccess",
-                                        "src": "2399:10:0"
-                                      }
-                                    ],
-                                    "id": 261,
-                                    "name": "IndexAccess",
-                                    "src": "2391:19:0"
-                                  }
-                                ],
-                                "id": 262,
-                                "name": "MemberAccess",
-                                "src": "2391:26:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 229,
-                                  "type": "uint256",
-                                  "value": "price"
-                                },
-                                "id": 263,
-                                "name": "Identifier",
-                                "src": "2420:5:0"
-                              }
-                            ],
-                            "id": 264,
-                            "name": "BinaryOperation",
-                            "src": "2391:34:0"
-                          }
-                        ],
-                        "id": 265,
-                        "name": "Assignment",
-                        "src": "2362:63:0"
-                      }
-                    ],
-                    "id": 266,
-                    "name": "ExpressionStatement",
-                    "src": "2362:63:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "uint256"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": true,
-                              "member_name": "escrow",
-                              "referencedDeclaration": 10,
-                              "type": "uint256"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "type": "struct tour.User storage ref"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 25,
-                                      "type": "mapping(address => struct tour.User storage ref)",
-                                      "value": "userMap"
-                                    },
-                                    "id": 267,
-                                    "name": "Identifier",
-                                    "src": "2464:7:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 222,
-                                      "type": "address",
-                                      "value": "seller"
-                                    },
-                                    "id": 268,
-                                    "name": "Identifier",
-                                    "src": "2472:6:0"
-                                  }
-                                ],
-                                "id": 269,
-                                "name": "IndexAccess",
-                                "src": "2464:15:0"
-                              }
-                            ],
-                            "id": 270,
-                            "name": "MemberAccess",
-                            "src": "2464:22:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "commonType": {
-                                "typeIdentifier": "t_uint256",
-                                "typeString": "uint256"
-                              },
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "operator": "+",
-                              "type": "uint256"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "member_name": "escrow",
-                                  "referencedDeclaration": 10,
-                                  "type": "uint256"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "isConstant": false,
-                                      "isLValue": true,
-                                      "isPure": false,
-                                      "lValueRequested": false,
-                                      "type": "struct tour.User storage ref"
-                                    },
-                                    "children": [
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
-                                          "referencedDeclaration": 25,
-                                          "type": "mapping(address => struct tour.User storage ref)",
-                                          "value": "userMap"
-                                        },
-                                        "id": 271,
-                                        "name": "Identifier",
-                                        "src": "2489:7:0"
-                                      },
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
-                                          "referencedDeclaration": 222,
-                                          "type": "address",
-                                          "value": "seller"
-                                        },
-                                        "id": 272,
-                                        "name": "Identifier",
-                                        "src": "2497:6:0"
-                                      }
-                                    ],
-                                    "id": 273,
-                                    "name": "IndexAccess",
-                                    "src": "2489:15:0"
-                                  }
-                                ],
-                                "id": 274,
-                                "name": "MemberAccess",
-                                "src": "2489:22:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 229,
-                                  "type": "uint256",
-                                  "value": "price"
-                                },
-                                "id": 275,
-                                "name": "Identifier",
-                                "src": "2514:5:0"
-                              }
-                            ],
-                            "id": 276,
-                            "name": "BinaryOperation",
-                            "src": "2489:30:0"
-                          }
-                        ],
-                        "id": 277,
-                        "name": "Assignment",
-                        "src": "2464:55:0"
-                      }
-                    ],
-                    "id": 278,
-                    "name": "ExpressionStatement",
-                    "src": "2464:55:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "isStructConstructorCall": false,
-                          "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
-                          "type": "uint256",
-                          "type_conversion": false
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_struct$_Tour_$8_storage",
-                                  "typeString": "struct tour.Tour storage ref"
-                                }
-                              ],
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "member_name": "push",
-                              "referencedDeclaration": null,
-                              "type": "function (struct tour.Tour storage ref) returns (uint256)"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "member_name": "tours",
-                                  "referencedDeclaration": 15,
-                                  "type": "struct tour.Tour storage ref[] storage ref"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "isConstant": false,
-                                      "isLValue": true,
-                                      "isPure": false,
-                                      "lValueRequested": false,
-                                      "type": "struct tour.User storage ref"
-                                    },
-                                    "children": [
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
-                                          "referencedDeclaration": 25,
-                                          "type": "mapping(address => struct tour.User storage ref)",
-                                          "value": "userMap"
-                                        },
-                                        "id": 279,
-                                        "name": "Identifier",
-                                        "src": "2551:7:0"
-                                      },
-                                      {
-                                        "attributes": {
-                                          "argumentTypes": null,
-                                          "isConstant": false,
-                                          "isLValue": false,
-                                          "isPure": false,
-                                          "lValueRequested": false,
-                                          "member_name": "sender",
-                                          "referencedDeclaration": null,
-                                          "type": "address payable"
-                                        },
-                                        "children": [
-                                          {
-                                            "attributes": {
-                                              "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
-                                              "referencedDeclaration": 337,
-                                              "type": "msg",
-                                              "value": "msg"
-                                            },
-                                            "id": 280,
-                                            "name": "Identifier",
-                                            "src": "2559:3:0"
-                                          }
-                                        ],
-                                        "id": 281,
-                                        "name": "MemberAccess",
-                                        "src": "2559:10:0"
-                                      }
-                                    ],
-                                    "id": 282,
-                                    "name": "IndexAccess",
-                                    "src": "2551:19:0"
-                                  }
-                                ],
-                                "id": 283,
-                                "name": "MemberAccess",
-                                "src": "2551:25:0"
-                              }
-                            ],
-                            "id": 284,
-                            "name": "MemberAccess",
-                            "src": "2551:30:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "type": "struct tour.Tour storage ref"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 29,
-                                  "type": "mapping(uint256 => struct tour.Tour storage ref)",
-                                  "value": "metaId"
-                                },
-                                "id": 285,
-                                "name": "Identifier",
-                                "src": "2582:6:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 216,
-                                  "type": "uint256",
-                                  "value": "id"
-                                },
-                                "id": 286,
-                                "name": "Identifier",
-                                "src": "2589:2:0"
-                              }
-                            ],
-                            "id": 287,
-                            "name": "IndexAccess",
-                            "src": "2582:10:0"
-                          }
-                        ],
-                        "id": 288,
-                        "name": "FunctionCall",
-                        "src": "2551:42:0"
-                      }
-                    ],
-                    "id": 289,
-                    "name": "ExpressionStatement",
-                    "src": "2551:42:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "delete",
-                          "prefix": true,
-                          "type": "tuple()"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": true,
-                              "type": "struct tour.Tour storage ref"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 29,
-                                  "type": "mapping(uint256 => struct tour.Tour storage ref)",
-                                  "value": "metaId"
-                                },
-                                "id": 290,
-                                "name": "Identifier",
-                                "src": "2610:6:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 216,
-                                  "type": "uint256",
-                                  "value": "id"
-                                },
-                                "id": 291,
-                                "name": "Identifier",
-                                "src": "2617:2:0"
-                              }
-                            ],
-                            "id": 292,
-                            "name": "IndexAccess",
-                            "src": "2610:10:0"
-                          }
-                        ],
-                        "id": 293,
-                        "name": "UnaryOperation",
-                        "src": "2603:17:0"
-                      }
-                    ],
-                    "id": 294,
-                    "name": "ExpressionStatement",
-                    "src": "2603:17:0"
                   }
                 ],
-                "id": 295,
+                "id": 235,
                 "name": "Block",
-                "src": "2106:525:0"
+                "src": "2106:552:0"
               }
             ],
-            "id": 296,
+            "id": 236,
             "name": "FunctionDefinition",
-            "src": "2062:569:0"
+            "src": "2062:596:0"
           },
           {
             "attributes": {
@@ -8353,7 +6588,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "viewUserBalance",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -8366,9 +6601,9 @@
                   ]
                 },
                 "children": [],
-                "id": 297,
+                "id": 237,
                 "name": "ParameterList",
-                "src": "2662:2:0"
+                "src": "2689:2:0"
               },
               {
                 "children": [
@@ -8376,7 +6611,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 310,
+                      "scope": 250,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -8389,19 +6624,19 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 300,
+                        "id": 240,
                         "name": "ElementaryTypeName",
-                        "src": "2694:4:0"
+                        "src": "2721:4:0"
                       }
                     ],
-                    "id": 301,
+                    "id": 241,
                     "name": "VariableDeclaration",
-                    "src": "2694:4:0"
+                    "src": "2721:4:0"
                   }
                 ],
-                "id": 302,
+                "id": 242,
                 "name": "ParameterList",
-                "src": "2693:7:0"
+                "src": "2720:7:0"
               },
               {
                 "attributes": {
@@ -8418,20 +6653,20 @@
                       "type": "modifier ()",
                       "value": "onlyUser"
                     },
-                    "id": 298,
+                    "id": 238,
                     "name": "Identifier",
-                    "src": "2665:8:0"
+                    "src": "2692:8:0"
                   }
                 ],
-                "id": 299,
+                "id": 239,
                 "name": "ModifierInvocation",
-                "src": "2665:8:0"
+                "src": "2692:8:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 302
+                      "functionReturnParameters": 242
                     },
                     "children": [
                       {
@@ -8466,9 +6701,9 @@
                                   "type": "mapping(address => struct tour.User storage ref)",
                                   "value": "userMap"
                                 },
-                                "id": 303,
+                                "id": 243,
                                 "name": "Identifier",
-                                "src": "2726:7:0"
+                                "src": "2753:7:0"
                               },
                               {
                                 "attributes": {
@@ -8488,43 +6723,43 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 337,
+                                      "referencedDeclaration": 277,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 304,
+                                    "id": 244,
                                     "name": "Identifier",
-                                    "src": "2734:3:0"
+                                    "src": "2761:3:0"
                                   }
                                 ],
-                                "id": 305,
+                                "id": 245,
                                 "name": "MemberAccess",
-                                "src": "2734:10:0"
+                                "src": "2761:10:0"
                               }
                             ],
-                            "id": 306,
+                            "id": 246,
                             "name": "IndexAccess",
-                            "src": "2726:19:0"
+                            "src": "2753:19:0"
                           }
                         ],
-                        "id": 307,
+                        "id": 247,
                         "name": "MemberAccess",
-                        "src": "2726:26:0"
+                        "src": "2753:26:0"
                       }
                     ],
-                    "id": 308,
+                    "id": 248,
                     "name": "Return",
-                    "src": "2719:33:0"
+                    "src": "2746:33:0"
                   }
                 ],
-                "id": 309,
+                "id": 249,
                 "name": "Block",
-                "src": "2700:68:0"
+                "src": "2727:68:0"
               }
             ],
-            "id": 310,
+            "id": 250,
             "name": "FunctionDefinition",
-            "src": "2637:131:0"
+            "src": "2664:131:0"
           },
           {
             "attributes": {
@@ -8536,7 +6771,7 @@
                 null
               ],
               "name": "viewBalance",
-              "scope": 322,
+              "scope": 262,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -8549,9 +6784,9 @@
                   ]
                 },
                 "children": [],
-                "id": 311,
+                "id": 251,
                 "name": "ParameterList",
-                "src": "2794:2:0"
+                "src": "2821:2:0"
               },
               {
                 "children": [
@@ -8559,7 +6794,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 321,
+                      "scope": 261,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -8572,25 +6807,25 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 312,
+                        "id": 252,
                         "name": "ElementaryTypeName",
-                        "src": "2817:4:0"
+                        "src": "2844:4:0"
                       }
                     ],
-                    "id": 313,
+                    "id": 253,
                     "name": "VariableDeclaration",
-                    "src": "2817:4:0"
+                    "src": "2844:4:0"
                   }
                 ],
-                "id": 314,
+                "id": 254,
                 "name": "ParameterList",
-                "src": "2816:7:0"
+                "src": "2843:7:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 314
+                      "functionReturnParameters": 254
                     },
                     "children": [
                       {
@@ -8624,7 +6859,7 @@
                                 "attributes": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_tour_$322",
+                                      "typeIdentifier": "t_contract$_tour_$262",
                                       "typeString": "contract tour"
                                     }
                                   ],
@@ -8635,9 +6870,9 @@
                                   "type": "type(address)",
                                   "value": "address"
                                 },
-                                "id": 315,
+                                "id": 255,
                                 "name": "ElementaryTypeNameExpression",
-                                "src": "2849:7:0"
+                                "src": "2876:7:0"
                               },
                               {
                                 "attributes": {
@@ -8645,48 +6880,48 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 351,
+                                  "referencedDeclaration": 291,
                                   "type": "contract tour",
                                   "value": "this"
                                 },
-                                "id": 316,
+                                "id": 256,
                                 "name": "Identifier",
-                                "src": "2857:4:0"
+                                "src": "2884:4:0"
                               }
                             ],
-                            "id": 317,
+                            "id": 257,
                             "name": "FunctionCall",
-                            "src": "2849:13:0"
+                            "src": "2876:13:0"
                           }
                         ],
-                        "id": 318,
+                        "id": 258,
                         "name": "MemberAccess",
-                        "src": "2849:21:0"
+                        "src": "2876:21:0"
                       }
                     ],
-                    "id": 319,
+                    "id": 259,
                     "name": "Return",
-                    "src": "2842:28:0"
+                    "src": "2869:28:0"
                   }
                 ],
-                "id": 320,
+                "id": 260,
                 "name": "Block",
-                "src": "2823:63:0"
+                "src": "2850:63:0"
               }
             ],
-            "id": 321,
+            "id": 261,
             "name": "FunctionDefinition",
-            "src": "2773:113:0"
+            "src": "2800:113:0"
           }
         ],
-        "id": 322,
+        "id": 262,
         "name": "ContractDefinition",
-        "src": "61:2827:0"
+        "src": "61:2854:0"
       }
     ],
-    "id": 323,
+    "id": 263,
     "name": "SourceUnit",
-    "src": "0:2890:0"
+    "src": "0:2917:0"
   },
   "compiler": {
     "name": "solc",
@@ -8696,12 +6931,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x99D4a65795266E3c14D17F12C525cA4369090A48",
-      "transactionHash": "0xde57ce71b5274e706e68f93d48d6fbe9ddb0680047f7e713ecbb25d79c897997"
+      "address": "0x5c42F38fbfD32370A97BB33Ea08457960E575718",
+      "transactionHash": "0x5bb685a6b198126ff1ad1710c48fc354b9a5ca9103275d550902142a5975280a"
     }
   },
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-04-14T17:07:33.502Z",
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-04-15T23:07:33.493Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

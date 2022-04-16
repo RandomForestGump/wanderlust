@@ -102,7 +102,7 @@ App = {
         //price=parseInt(price);
         console.log(typeof price);
         //voteInstance.send(1000000000000000000, {from: account});
-        price=1000000000000000000;
+        price=4000000000000000000;
         //voteInstance.send(price , {from: account});
         return voteInstance.register(!isSeller, {from: account, value: price}); //input price
     }).then(function(result, err){
@@ -146,8 +146,9 @@ handleAddTour: function(name, description, price){
   web3.eth.getAccounts(function(error, accounts) {
   var account = accounts[0];
   var _id = -1;
+  console.log("The price of the item is:")
+  console.log(price)
   //Get Name, description, price
-  console.log('Tried to import fs file');
   
   $.getJSON('../tourAttr.json', function(data) {
     _id = data.length;
@@ -159,51 +160,56 @@ handleAddTour: function(name, description, price){
     };
     data.push(obj);
 
-    //Write file
-    // $.post("/saveToFile",{data:JSON.stringify(data)});
-    $.post("/saveToFile",{data:JSON.stringify(data)});
-
-  });
-  console.log("ID is: ");
-  console.log(_id);
-
   App.contracts.tour.deployed().then(function(instance) {
       voteInstance = instance;
       return voteInstance.addTour(_id, price, {from: account}); //input price
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
-          alert( " Withdraw done successfully")
+          alert( " Add Item done successfully")
           else
-          alert( " Withdraw not done successfully due to revert")
+          alert( " Add Item not done successfully due to revert")
       } else {
-          alert( " Withdraw failed")
+          alert( " WAdd Item failed")
       } 
     })  
+    $.post("/saveToFile",{data:JSON.stringify(data)});
   })
+  
+});
+
   },
 
 handleBuyTour: function(event){
   event.preventDefault();
   var voteInstance;
-  //Allocate _id-------------------------
   var _id = parseInt($(event.target).data('id'));
-  web3.eth.getAccounts(function(error, accounts) {
-  var account = accounts[0];
-  App.contracts.tour.deployed().then(function(instance) {
-      voteInstance = instance;
-      return voteInstance.buyTour(_id, {from: account}); //input price
-  }).then(function(result, err){
-      if(result){
-          if(parseInt(result.receipt.status) == 1)
-          alert( " Buy Tour done successfully")
-          else
-          alert(" Buy Tour not done successfully due to revert")
-      } else {
-          alert( " Buy Tour failed")
-      }   
-  })
-  })
+  $.getJSON('../tourAttr.json', function(data) {
+    data.splice(_id, _id+1);
+    web3.eth.getAccounts(function(error, accounts) {
+      var account = accounts[0];
+      console.log(account);
+      console.log(_id);
+      
+      App.contracts.tour.deployed().then(function(instance) {
+          voteInstance = instance;
+          return voteInstance.buyTour(_id, {from: account}); //input price
+      }).then(function(result, err){
+          if(result){
+              if(parseInt(result.receipt.status) == 1)
+              alert( " Buy Tour done successfully")
+              else
+              alert(" Buy Tour not done successfully due to revert")
+          } else {
+              alert( " Buy Tour failed")
+          }   
+      })
+      })
+
+      $.post("/saveToFile",{data:JSON.stringify(data)});
+
+  });
+  
 },
 
 

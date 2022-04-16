@@ -35,7 +35,6 @@ App = {
         App.web3Provider = new Web3.providers.HttpProvider(App.url);
       }
       web3 = new Web3(App.web3Provider);
-  
       ethereum.enable();
   
       App.populateAddress();
@@ -97,17 +96,25 @@ App = {
     console.log(price);
     App.contracts.tour.deployed().then(function(instance) {
         voteInstance = instance;
-        //voteInstance.send(price, {from: web3.eth.accounts[0]});
-        //voteInstance.send(price, {from: web3.eth.account});
-        
-        //price=toWei(price, 'ether')
-        console.log(typeof price);
-        //price=parseInt(price);
-        console.log(typeof price);
-        //voteInstance.send(1000000000000000000, {from: account});
-        price=2000000000000000000;
+        console.log("Price registered");
+        console.log(price);
+        console.log("Seller typr");
+        console.log(typeof isSeller);
+        var isSellerBool;
+        if(isSeller=='true'){
+          isSellerBool=0;
+        }
+        else {
+          isSellerBool=1;
+        }
+    
+       // price=App.web3.utils.toWei(price);
+       // price=utils1.toWei(price);
+        price=price*1000000000000000000;
+        console.log("Price registered after conversion");
+        console.log(price);
         //voteInstance.send(price , {from: account});
-        return voteInstance.register(!isSeller, {from: account, value: price}); //input price
+        return voteInstance.register(isSellerBool, {from: account, value: price}); //input price
     }).then(function(result, err){
         if(result){
             if(parseInt(result.receipt.status) == 1)

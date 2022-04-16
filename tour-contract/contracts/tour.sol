@@ -16,7 +16,7 @@ contract tour  {
         uint escrow;
         bool status;
         uint[] tours;
-        bool isBuyer;
+        uint isBuyer;
 
     }
     Tour[] tourInfo;
@@ -27,11 +27,11 @@ contract tour  {
     
     // modifiers or rules
     modifier onlyBuyer{ 
-        require(userMap[msg.sender].status==true && userMap[msg.sender].isBuyer);
+        require(userMap[msg.sender].status==true && userMap[msg.sender].isBuyer==1);
         _;
     }
     modifier onlySeller{ 
-        require(userMap[msg.sender].status==true && !userMap[msg.sender].isBuyer);
+        require(userMap[msg.sender].status==true && userMap[msg.sender].isBuyer==0);
         _;
     }
     modifier onlyUser{ 
@@ -45,15 +45,15 @@ contract tour  {
         
     }
     
-    function register (bool isBuyer) public payable { 
+    function register (uint isBuyer) public payable { 
         
         userMap[msg.sender].escrow = msg.value;
         userMap[msg.sender].status = true;
-        if(isBuyer){
-            userMap[msg.sender].isBuyer = true;
+        if(isBuyer==1){
+            userMap[msg.sender].isBuyer = 1;
         }
         else{
-            userMap[msg.sender].isBuyer = false;
+            userMap[msg.sender].isBuyer = 0;
             
         }
         

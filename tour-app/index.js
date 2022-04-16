@@ -1,4 +1,5 @@
 var express = require('express');
+var web3_utils = require('web3-utils');
 var app = express();
 app.use(express.static('src'));
 app.use('/src', express.static('../tour-app/node_modules/'));
@@ -17,7 +18,13 @@ app.post('/savetoFile', function(req,res){
   });
 });
 
-
+app.get('/toWei', function routeHandler(req, res){
+  console.log("Entered Into Request" );
+  eth_val=req.body.data;
+  wei_val = web3_utils.toWei(eth_val, 'ether');
+  res.send({price:wei_val});
+  
+});
 
 app.get('/', function (req, res) {
   res.render('index.html');

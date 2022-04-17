@@ -46,37 +46,5 @@
     "picture": "images/Radar.png",
     "price": 100,
     "status": false
-  },
-  {
-    "id": 6,
-    "name": "Palak",
-    "description": "Lol",
-    "picture": "images/Radar.png",
-    "price": 100,
-    "status": false
-  },
-  {
-    "id": 7,
-    "name": "Palek",
-    "description": "Lol",
-    "picture": "images/Radar.png",
-    "price": 12000000000000000000,
-    "status": true
-  },
-  {
-    "id": 8,
-    "name": "ak",
-    "description": "nop",
-    "picture": "images/Radar.png",
-    "price": 1000000000000000000,
-    "status": true
-  },
-  {
-    "id": 9,
-    "name": "dkdf",
-    "description": "klsksd",
-    "picture": "images/Radar.png",
-    "price": 3000000000000000000,
-    "status": true
   }
 ]

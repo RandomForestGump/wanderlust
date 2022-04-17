@@ -6,3 +6,48 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+#escrow-div{
+  display: flex;
+}
+
+#seller-div{
+  display: flex;
+  margin: 5px 0px;
+}
+
+#isSeller{
+  flex: 80%;
+}
+
+#register_div{
+  display: flex;
+}
+
+#register{
+  margin-right: 10px ;
+}
+
+
+#view_balance {
+  margin: 4px 100px;
+  font-size: 20px;
+}
+
+
+#view_user_balance {
+  margin: 4px 100px;
+  font-size: 20px;
+}
+
+
+.modal-content {
+  margin: 150px;
+  /* width: 700px; */
+  border: 1px solid #999;
+}
+
+.contact-form {
+  margin: 20px 150px;
+}

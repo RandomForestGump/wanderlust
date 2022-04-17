@@ -2,33 +2,33 @@
   {
     "id": 0,
     "name": "Niagra",
-    "description": "Lots of walk",
-    "picture": "images/Milli.png",
-    "price": 100000000000000000,
+    "description": "Welcome to niagara falls blah. Welcome to niagara falls blaLots of Lots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walk",
+    "picture": "images/niagra.JPG",
+    "price": 100,
     "status": true
   },
   {
     "id": 1,
-    "name": "Murphy",
-    "description": "Lots of walk",
-    "picture": "images/Murphy.png",
-    "price": 100000000000000000,
+    "name": "Botanical Gardens Tour",
+    "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
+    "picture": "images/biowalk.JPG",
+    "price": 50,
     "status": true
   },
   {
     "id": 2,
-    "name": "Radar",
-    "description": "Lots of walk",
-    "picture": "images/radar.png",
-    "price": 100000000000000000,
+    "name": "La Selle",
+    "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
+    "picture": "images/laselle.JPG",
+    "price": 75,
     "status": true
   },
   {
     "id": 3,
-    "name": "Riley",
+    "name": "Buffalo Gorge Trek",
     "description": "Lots of walk",
-    "picture": "images/Riley.png",
-    "price": 100000000000000000,
+    "picture": "images/gorge.PNG",
+    "price": 100,
     "status": true
   },
   {
@@ -36,15 +36,15 @@
     "name": "Roman",
     "description": "Niagra falls",
     "picture": "images/Radar.png",
-    "price": "1000000000000000000",
-    "status": false
+    "price": 100,
+    "status": true
   },
   {
     "id": 5,
     "name": "Roman",
     "description": "ABCD",
     "picture": "images/Radar.png",
-    "price": "300000000000000000",
+    "price": 100,
     "status": false
   },
   {
@@ -52,7 +52,31 @@
     "name": "Palak",
     "description": "Lol",
     "picture": "images/Radar.png",
-    "price": 1000000000000000000,
+    "price": 100,
     "status": false
+  },
+  {
+    "id": 7,
+    "name": "Palek",
+    "description": "Lol",
+    "picture": "images/Radar.png",
+    "price": 12000000000000000000,
+    "status": true
+  },
+  {
+    "id": 8,
+    "name": "ak",
+    "description": "nop",
+    "picture": "images/Radar.png",
+    "price": 1000000000000000000,
+    "status": true
+  },
+  {
+    "id": 9,
+    "name": "dkdf",
+    "description": "klsksd",
+    "picture": "images/Radar.png",
+    "price": 3000000000000000000,
+    "status": true
   }
 ]

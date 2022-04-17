@@ -9,6 +9,7 @@
     <title>Pick your Favorite</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,109 +26,77 @@
           <br/>
         </div>
       </div>
-      <div id="proposalsRow" class="row">
-      </div>
-    </div>
-    <div id="proposalTemplate" style="display: none;">
-      <div class="col-sm-8 col-md-2 col-lg-3">
-        <div class="panel panel-default panel-proposal">
-          <div class="panel-heading">
-            <h3 class="panel-title" style="text-align:center"></h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/170x170" class="img-rounded img-center" style="width: 230px; height: 280px;" src="images/Milli.png" data-holder-rendered="true">
-            <br/><br/>
-            <div class="col-md-12 text-center"> 
-              <button class="btn btn-default btn-buy" type="button" data-id="0">Buy</button>
-            </div>  
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row" id="address_div">
-        <div style="margin-left: 15px;margin-top: 10px;">
-          <span> Is Seller : </span>
+      <div class="row">
+        <div class="col-md-4" id="seller-div"> 
+          <label style="flex: 20%;" for="isSeller">Is Seller : </label>
           <select id="isSeller">
             <option value="true">True</option>
             <option value="false">False</option>
           </select>
         </div>
-        <div style="margin-left: 25px;margin-top: 20px;">
-          <!-- <span> Price: </span> -->
-          <!-- <select id="price" value=""></select> -->
-          <form>
-            Escrow :
+        <div class="col-md-6" id="escrow-div">
+            <label style="flex: 20%; margin-top: 5px;" for="escrow"> Escrow :</label>
             <input type="number" class="form-control" id="escrow" placeholder="Escrow" value="1">
-          </form>
         </div>
-
-        <div style="margin-left: 25px;margin-top: 30px;">
-          <!-- <span> Price: </span> -->
-          <!-- <select id="price" value=""></select> -->
-          <form>
-            Price :
-            <input type="number" class="form-control" id="price" placeholder="price" value="0.001">
-          </form>
-        </div>
-
-        <div style="margin-left: 25px;margin-top: 40px;">
-          <!-- <span> Price: </span> -->
-          <!-- <select id="price" value=""></select> -->
-          <form>
-            Name :
-            <input type="string" class="form-control" id="name" placeholder="name" value="John">
-          </form>
-        </div>
-
-        <div style="margin-left: 25px;margin-top: 50px;">
-          <!-- <span> Price: </span> -->
-          <!-- <select id="price" value=""></select> -->
-          <form>
-            Description :
-            <input type="string" class="form-control" id="description" placeholder="description" value="ABCD">
-          </form>
-        </div>
-
-      </div>
-    </div>
-       <br>
-      <div class="row" id="register_div">
-        <div style="margin-left: 15px;">
-          <button class="btn btn-info" type="button" id="register">Register</button>
+        <div class="col-md-2" id="register_div">
+            <button class="btn btn-info " type="button" id="register">Register</button>
+            <button class="btn btn-info" type="button" id="showModalAddItem" data-modal="modalAddItem">Add Item</button>  
+          
+            
         </div>
       </div>
-      <br>
-      <div class="row" id="register_div">
-        <div style="margin-left: 25px;">
-          <button class="btn btn-info" type="button" id="add-item">Add Item</button>
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-md-5" style="display: flex;">
+          <button class="btn btn-info" type="button" id="view-balance">View Balance</button>
+          <h3 id="view_balance"></h3>
+        </div>
+        <div class="col-md-5" style="display: flex;">
+          <button class="btn btn-info" type="button" id="view-userbalance">View User Balance</button>  
+          <h1 id="view_user_balance"></h1>
+        </div>
+        <div class="col-md-2" >
+          <button class="btn btn-info " type="button" id="btn-withdraw">Withdraw</button>
+         </div>
+      </div>
+      <div id="proposalsRow" >
+      </div>
+      <div id="proposalTemplate" style="display: none;">
+        <div class="row m-2">
+          <div class="card" style="position: relative;">
+            <div class="car-img col-md-5">
+              <img alt="140x140" data-src="holder.js/170x170" class="img-rounded img-center" style="width: 400px; height: 250px;" src="images/Milli.png" data-holder-rendered="true">
+            </div>
+            <div class="card-body col mx-auto m-2" style="height: 250px;">
+              <h2 class="card-title"> </h2>
+              <h4 class="card-price"></h4>
+              <p class="card-text"></p>
+              <button class="btn btn-default btn-buy btn-success" type="button" data-id="0" style="right: 0%;bottom: 0%;;position: absolute;">Buy</button>
+            </div>   
+          </div>
         </div>
       </div>
-      <br>
-      <div class="row" id="withdraw_div">
-        <div style="margin-left: 10px;">
-          <button class="btn btn-info" type="button" id="btn-withdraw">Withdraw</button>
+      <div id="modalAddItem" class="modal">
+        <div class="modal-content">
+          <div class="contact-form">
+            <form action="/">
+              <h2>Add Item</h2>
+              <div>
+                <input type="number" class="form-control" id="price" placeholder="Price">
+                <input type="text" class="form-control" id="name" placeholder="Name" >
+                <input type="text" class="form-control" id="description" placeholder="Description">
+                <input type="file" class="form-control" id="imagesTour" placeholder="Choose Image">
+              </div>
+              <button class="btn btn-info" type="button" id="add-item">Save</button>
+            </form>
+          </div>
         </div>
-        <div class="row" id="view_balance_div">
-          <div style="margin-left: 10px;">
-            <button class="btn btn-success" type="button" id="view-balance" style="float:right; margin-right: 5px;">View Balance Check</button>  
-            <br>
-            <h1 id="view_balance"></h1></div>
       </div>
-      <br>
-      <div class="row" id="view_balance_div">
-        <div style="margin-left: 10px;">
-          <button class="btn btn-success" type="button" id="view-userbalance" style="float:right; margin-right: 5px;">View User Balance Check</button>  
-          <br>
-          <h1 id="view_user_balance"></h1></div>
-    </div>
-    <br>
-    </div>
     </div>
     <!-- jQuery (necessarlsy for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/dist/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="js/dist/web3.min.js"></script>
     <script src="js/dist/truffle-contract.js"></script>
     <script src="js/app1.js"></script>

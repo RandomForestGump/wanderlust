@@ -13,10 +13,11 @@ App = {
   
         for (i = 0; i < data.length; i ++) {
           if (data[i].status){
-          proposalTemplate.find('.panel-title').text(data[i].name);
+          proposalTemplate.find('.card-title').text(data[i].name);
           proposalTemplate.find('img').attr('src', data[i].picture);
           proposalTemplate.find('.btn-buy').attr('data-id', data[i].id);
-  
+          proposalTemplate.find('.card-price').text(data[i].price+" ETH");
+          proposalTemplate.find('.card-text').text(data[i].description);
           proposalsRow.append(proposalTemplate.html());
           App.names.push(data[i].name);
           }
@@ -59,13 +60,22 @@ App = {
     bindEvents: function() {
       $(document).on('click', '.btn-buy', App.handleBuyTour);
       $(document).on('click', '#btn-withdraw',App.handleWithdraw);
-
+      $(document).on('click', '#showModalAddItem', function(){
+        $('.modal').css("display","block");
+      });
+      window.onclick = function (event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      };
       $(document).on('click', '#add-item', function(){ 
-      
+        $('.modal').css("display","none");
         var price = $('#price').val(); 
         var name = $('#name').val(); 
         var desc = $('#description').val(); 
-        App.handleAddTour(name, desc, price);});
+        App.handleAddTour(name, desc, price);
+       
+      });
 
 
        $(document).on('click', '#view-userbalance',App.handleViewUserBalance);
@@ -192,7 +202,6 @@ handleAddTour: function(name, description, price){
   })
   
 });
-
   },
 
 handleBuyTour: function(event){

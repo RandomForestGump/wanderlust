@@ -73,7 +73,8 @@ App = {
       var price = $('#price').val(); 
       var name = $('#name').val(); 
       var desc = $('#description').val(); 
-      App.handleAddTour(name, desc, price);
+      var img = $('#imagesTour').val(); 
+      App.handleAddTour(name, desc, price,img);
       
     });
 
@@ -169,21 +170,23 @@ App.contracts.tour.deployed().then(function(instance) {
 })
 },
 
-handleAddTour: function(name, description, price){
+handleAddTour: function(name, description, price,img){
 var voteInstance;
 //Allocate _id-------------------------
 web3.eth.getAccounts(function(error, accounts) {
 var account = accounts[0];
 var _id = -1;
 //Get Name, description, price
-price=parseInt(price*1000000000000000000);
+//price=parseInt(price*1000000000000000000);
+
 $.getJSON('../tourAttr.json', function(data) {
   _id = data.length;
+  let imagename = img.slice(12); 
   var obj = {
     "id": _id,
     "name": name,
     "description":description,
-    "picture": "images/Radar.png",
+    "picture": "images/"+imagename,
     "price": price,
     "status": true
   };
@@ -191,7 +194,7 @@ $.getJSON('../tourAttr.json', function(data) {
 
 App.contracts.tour.deployed().then(function(instance) {
     voteInstance = instance;
-    return voteInstance.addTour(_id, price, {from: account}); //input price
+    return voteInstance.addTour(_id, {from: account}); //input price
 }).then(function(result, err){
     if(result){
         if(parseInt(result.receipt.status) == 1)
@@ -222,7 +225,7 @@ $.getJSON('../tourAttr.json', function(data) {
         console.log(data[_id].price);
         console.log("From account is:");
         console.log(account);
-        return voteInstance.buyTour(_id, data[_id].price, {from: account}); //input price
+        return voteInstance.buyTour(_id, data[_id].price *1000000000000000000, {from: account}); //input price
     }).then(function(result, err){
       console.log(result);
         if(result){
@@ -250,6 +253,7 @@ App.contracts.tour.deployed().then(function(instance) {
   voteInstance = instance;
   return voteInstance.viewBalance();
 }).then((r)=>{
+  r=r/1000000000000000000
   jQuery('#view_balance').text(r)
   alert(r + "  is the balance ! :)");
 }).catch(function(err){
@@ -263,6 +267,7 @@ App.contracts.tour.deployed().then(function(instance) {
   voteInstance = instance;
   return voteInstance.viewUserBalance();
 }).then((r)=>{
+  r=r/1000000000000000000
   jQuery('#view_user_balance').text(r)
   alert(r + "  is the balance ! :)");
 }).catch(function(err){

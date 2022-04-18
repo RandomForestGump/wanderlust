@@ -4,7 +4,7 @@
     "name": "Niagra",
     "description": "Welcome to niagara falls blah. Welcome to niagara falls blaLots of Lots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walk",
     "picture": "images/niagra.JPG",
-    "price": 100,
+    "price": 20,
     "status": true
   },
   {
@@ -12,7 +12,7 @@
     "name": "Botanical Gardens Tour",
     "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
     "picture": "images/biowalk.JPG",
-    "price": 50,
+    "price": 15,
     "status": true
   },
   {
@@ -20,7 +20,7 @@
     "name": "La Selle",
     "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
     "picture": "images/laselle.JPG",
-    "price": 75,
+    "price": 10,
     "status": true
   },
   {
@@ -28,23 +28,23 @@
     "name": "Buffalo Gorge Trek",
     "description": "Lots of walk",
     "picture": "images/gorge.PNG",
-    "price": 100,
+    "price": 5,
     "status": true
   },
   {
     "id": 4,
-    "name": "Roman",
-    "description": "Niagra falls",
-    "picture": "images/Radar.png",
-    "price": 100,
+    "name": "US and Canada Border Tour",
+    "description": "Take a tour along the US and Canada Border",
+    "picture": "images/border.jpeg",
+    "price": "20",
     "status": true
   },
   {
     "id": 5,
-    "name": "Roman",
-    "description": "ABCD",
-    "picture": "images/Radar.png",
-    "price": 100,
-    "status": false
+    "name": "Mckinley",
+    "description": "Mckinley",
+    "picture": "images/McKinley_Monument.jpeg",
+    "price": "20",
+    "status": true
   }
 ]

@@ -76,7 +76,7 @@ contract tour  {
     }
 
 
-    function addTour (uint id, uint price) onlySeller public {
+    function addTour (uint id) onlySeller public {
    
         // Tour memory new_tour;
         // new_tour.id = id;
@@ -96,6 +96,8 @@ contract tour  {
         //Deduct buyer balance
         userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;
         //Add seller balance
+        price=price * 90;
+        price=price/100;
         userMap[seller].escrow = userMap[seller].escrow + price;
         //Remove tour
         userMap[msg.sender].tours.push(id);

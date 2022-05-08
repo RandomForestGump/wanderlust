@@ -1,0 +1,10 @@
+{
+  "name": "bidwicket-contract",
+  "version": "1.0.0",
+  "author": "abcd",
+  "license": "ISC",
+  "dependencies": {
+      "openzeppelin-solidity": "4.3.2",
+      "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

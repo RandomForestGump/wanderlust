@@ -5,7 +5,7 @@
     "description": "Welcome to niagara falls blah. Welcome to niagara falls blaLots of Lots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walk",
     "picture": "images/niagra.JPG",
     "price": 20,
-    "status": true
+    "status": false
   },
   {
     "id": 1,
@@ -37,7 +37,7 @@
     "description": "Take a tour along the US and Canada Border",
     "picture": "images/border.jpeg",
     "price": "20",
-    "status": true
+    "status": false
   },
   {
     "id": 5,
@@ -46,5 +46,21 @@
     "picture": "images/McKinley_Monument.jpeg",
     "price": "20",
     "status": true
+  },
+  {
+    "id": 6,
+    "name": "OMG awesome tour",
+    "description": "Sex bomb",
+    "picture": "images/",
+    "price": "10000",
+    "status": false
+  },
+  {
+    "id": 7,
+    "name": "Rajat Jain",
+    "description": "Sexy baby",
+    "picture": "images/",
+    "price": "10000",
+    "status": false
   }
 ]

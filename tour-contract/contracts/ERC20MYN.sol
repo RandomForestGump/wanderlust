@@ -109,7 +109,7 @@ contract ERC20MYN is IERC20 {
 
 
    constructor() public {  
-	totalSupply_ = 1000000;
+	totalSupply_ = 10000000;
 	balances[msg.sender] = totalSupply_;
 	ERCowner = msg.sender; //#2
     }  

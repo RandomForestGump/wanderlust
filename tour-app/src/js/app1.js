@@ -3,7 +3,6 @@ App = {
   web3Provider: null,
   contracts: {},
   names: new Array(),
-  url: 'http://127.0.0.1:7545', //Address of deployed contract
   chairPerson:null,
   currentAccount:null,
   init: function() {
@@ -115,7 +114,7 @@ App = {
       voteInstance = instance;
       console.log("Price registered");
       console.log(price);
-      console.log("Seller typr");
+      console.log("Seller type");
       console.log(typeof isSeller);
       var isSellerBool;
       if(isSeller=='true'){
@@ -134,7 +133,7 @@ App = {
       console.log("Price registered after conversion");
       console.log(price);
       //voteInstance.send(price , {from: account});
-      return voteInstance.register(isSellerBool, {from: account, value: price}); //input price
+      return voteInstance.register(isSellerBool, {from: account}); //input price
   }).then(function(result, err){
       if(result){
           if(parseInt(result.receipt.status) == 1)
@@ -225,7 +224,7 @@ $.getJSON('../tourAttr.json', function(data) {
         console.log(data[_id].price);
         console.log("From account is:");
         console.log(account);
-        return voteInstance.buyTour(_id, data[_id].price *1000000000000000000, {from: account}); //input price
+        return voteInstance.buyTour(_id, data[_id].price, {from: account}); //input price
     }).then(function(result, err){
       console.log(result);
         if(result){
@@ -253,7 +252,7 @@ App.contracts.tour.deployed().then(function(instance) {
   voteInstance = instance;
   return voteInstance.viewBalance();
 }).then((r)=>{
-  r=r/1000000000000000000
+  // r=r/1000000000000000000
   jQuery('#view_balance').text(r)
   alert(r + "  is the balance ! :)");
 }).catch(function(err){
@@ -267,7 +266,7 @@ App.contracts.tour.deployed().then(function(instance) {
   voteInstance = instance;
   return voteInstance.viewUserBalance();
 }).then((r)=>{
-  r=r/1000000000000000000
+  // r=r/1000000000000000000
   jQuery('#view_user_balance').text(r)
   alert(r + "  is the balance ! :)");
 }).catch(function(err){

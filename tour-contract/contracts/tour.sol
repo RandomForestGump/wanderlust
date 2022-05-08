@@ -164,7 +164,7 @@ contract tour  {
         tokenContract =_tokenContract;  
     }
     
-    function register(uint price, uint isBuyer) public payable{ 
+    function register(uint isBuyer) public payable{ 
         
         userMap[msg.sender].status = true;
         if(isBuyer==1){
@@ -175,8 +175,7 @@ contract tour  {
             
         }
 
-         
-         tokenContract.Registration(owner,msg.sender, price);
+         tokenContract.Registration(owner,msg.sender, 100000);
         
     }
 
@@ -194,7 +193,7 @@ contract tour  {
 
     }
 
-    function buyTour (uint id, uint price, address marketplace) onlyBuyer public {
+    function buyTour (uint id, uint price) onlyBuyer public {
         //Get seller
         address seller = metaId[id];
         assert(price!=0);
@@ -208,7 +207,7 @@ contract tour  {
         // price=price * 90;
         // price=price/100;
         // userMap[seller].escrow = userMap[seller].escrow + price;
-        tokenContract.approve(marketplace, price);
+        // tokenContract.approve(marketplace, price);
         tokenContract.Registration(msg.sender,seller, price);
         //Remove tour
         // userMap[msg.sender].tours.push(id);

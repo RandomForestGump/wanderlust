@@ -1,9 +1,9 @@
 pragma solidity >=0.4.2 <=0.6.0;
-// pragma solidity ^0.6.2;
 
+import "./token.sol";
 contract tour  {
-   
-    // address chairperson;
+
+
 
     struct Tour{ 
         uint id; // local consortium escrow
@@ -19,6 +19,8 @@ contract tour  {
         uint isBuyer;
 
     }
+    ERC20MYN public tokenContract;
+    address owner;
     Tour[] tourInfo;
     mapping (address=>User) userMap;
     // mapping (address=>seller) public sellerMap;
@@ -40,14 +42,13 @@ contract tour  {
     }
     
     // constructor function
-    constructor () public   { 
-
-        
+    constructor (ERC20MYN _tokenContract) public   { 
+        owner= msg.sender;
+        tokenContract =_tokenContract;  
     }
     
-    function register (uint isBuyer) public payable { 
+    function register(uint price, uint isBuyer) public payable{ 
         
-        userMap[msg.sender].escrow = msg.value;
         userMap[msg.sender].status = true;
         if(isBuyer==1){
             userMap[msg.sender].isBuyer = 1;
@@ -56,64 +57,58 @@ contract tour  {
             userMap[msg.sender].isBuyer = 0;
             
         }
+
+         
+         tokenContract.Registration(owner,msg.sender, price);
         
     }
-        
-//    function withdraw (address payable toPay ) onlyUser public{
 
-//        assert(msg.sender == toPay);
-//         userMap[toPay].status=false;
-//         toPay.transfer(userMap[toPay].escrow);
-//         userMap[toPay].escrow = 0;
-        
-//     }
-    function withdraw (address payable  ) onlyUser public{
+    // function withdraw (address payable  ) onlyUser public{
 
-        userMap[msg.sender].status=false;
-        msg.sender.transfer(userMap[msg.sender].escrow);
-        userMap[msg.sender].escrow = 0;
+    //     userMap[msg.sender].status=false;
+    //     msg.sender.transfer(userMap[msg.sender].escrow);
+    //     userMap[msg.sender].escrow = 0;
         
-    }
+    // }
 
 
     function addTour (uint id) onlySeller public {
-   
-        // Tour memory new_tour;
-        // new_tour.id = id;
-        // new_tour.price=price;
-        // new_tour.seller = msg.sender;
-        // userMap[msg.sender].tours.push(new_tour);
         metaId[id] = msg.sender;
 
     }
 
-    function buyTour (uint id, uint price) onlyBuyer public {
+    function buyTour (uint id, uint price, address marketplace) onlyBuyer public {
         //Get seller
         address seller = metaId[id];
         assert(price!=0);
         // //Get buyer balance
-        assert(userMap[msg.sender].escrow - price >= 0);
+        assert(tokenContract.balanceOf(msg.sender)  - price >= 0);
         //Deduct buyer balance
-        userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;
+        // userMap[msg.sender].escrow = userMap[msg.sender].escrow - price;
         //Add seller balance
-        price=price * 90;
-        price=price/100;
-        userMap[seller].escrow = userMap[seller].escrow + price;
+        
+        
+        // price=price * 90;
+        // price=price/100;
+        // userMap[seller].escrow = userMap[seller].escrow + price;
+        tokenContract.approve(marketplace, price);
+        tokenContract.Registration(msg.sender,seller, price);
         //Remove tour
-        userMap[msg.sender].tours.push(id);
+        // userMap[msg.sender].tours.push(id);
         // delete metaId[id];
    
     }
 
-    function viewUserBalance () onlyUser public view returns(uint ){
+    function viewUserBalance () public view returns(uint ){
         
-        return userMap[msg.sender].escrow;
+        //return userMap[msg.sender].escrow;
+        return tokenContract.balanceOf(msg.sender);
         
     }
     function viewBalance () public view returns(uint ){
         
-        return address(this).balance;
+        //return address(this).balance;
+        return tokenContract.balanceOf(owner);
         
     }
 }
-

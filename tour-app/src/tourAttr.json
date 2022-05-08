@@ -1,66 +1,50 @@
 [
   {
     "id": 0,
-    "name": "Niagra",
-    "description": "Welcome to niagara falls blah. Welcome to niagara falls blaLots of Lots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walkLots of walk",
+    "name": "Niagra Falls Walk",
+    "description": "During this breathtaking photo tour, experience the power of Niagara Falls, the natural beauty of Lake Ontario and the Niagara River, the engineering marvel of Welland Canal, the luscious green vineyards walk over the Niagara region as you learn the history of Niagara-on-the-Lake and the centuries old Fort George and Fort Niagara",
     "picture": "images/niagra.JPG",
-    "price": 20,
+    "price": 200,
     "status": false
   },
   {
     "id": 1,
     "name": "Botanical Gardens Tour",
-    "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
+    "description": "Embark on a guided photo tour throughout the 30 greenhouses, each displaying a different exhibit and collection of plants. There are also several seasonal outdoor gardens that are always free and great for photography. Visitors spend anywhere between 45-120+ minutes on this photo tour.",
     "picture": "images/biowalk.JPG",
-    "price": 15,
+    "price": 150,
     "status": true
   },
   {
     "id": 2,
     "name": "La Selle",
-    "description": "Lots of walkLots of Lots of walkLots of walkLots of walkLots of walkLots Lots of Lots of walkLots of walkLots of walkLots of walkLots ",
+    "description": "Lake LsSelle is one of the main wonders in Buffalo. It is especially beautiful in winter Photographers adore the Baikal. You can see ice texture, Olhon rocks and a great number of ice grottoes and caves on your way. It is comfortable to travel around the Buffalo today there are comfortable modern lodges with room facilities and cafes in Olhon. You may travel on a specially marked by EMERCOM ice track.",
     "picture": "images/laselle.JPG",
-    "price": 10,
+    "price": 100,
     "status": true
   },
   {
     "id": 3,
     "name": "Buffalo Gorge Trek",
-    "description": "Lots of walk",
+    "description": "The gorge requires some exertion, but for travelers who will enjoy a side of solitude and tranquility along with the legendary main course, its more than worth the effort. A note of caution: this hike is not for everyone. Only fit and nimble hikers who can adjust their stride to accommodate the many rocks, roots and irregularities along the trail should descend into the gorge.",
     "picture": "images/gorge.PNG",
-    "price": 5,
+    "price": 250,
     "status": true
   },
   {
     "id": 4,
     "name": "US and Canada Border Tour",
-    "description": "Take a tour along the US and Canada Border",
+    "description": "Take a tour along the US and Canada Border.The gorge requires some exertion, but for travelers who will enjoy a side of solitude and tranquility along with the legendary main course, its more than worth the effort. A note of caution: this hike is not for everyone. Only fit and nimble hikers who can adjust their stride to accommodate the many rocks, roots and irregularities along the trail should descend into the gorge.",
     "picture": "images/border.jpeg",
-    "price": "20",
+    "price": 400,
     "status": false
   },
   {
     "id": 5,
-    "name": "Mckinley",
-    "description": "Mckinley",
+    "name": "McKinley Monument",
+    "description": "McKinley Monument Tour",
     "picture": "images/McKinley_Monument.jpeg",
-    "price": "20",
-    "status": true
-  },
-  {
-    "id": 6,
-    "name": "OMG awesome tour",
-    "description": "Sex bomb",
-    "picture": "images/",
-    "price": "10000",
-    "status": false
-  },
-  {
-    "id": 7,
-    "name": "Rajat Jain",
-    "description": "Sexy baby",
-    "picture": "images/",
-    "price": "10000",
+    "price": 200,
     "status": false
   }
 ]

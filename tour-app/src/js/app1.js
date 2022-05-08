@@ -15,7 +15,7 @@ App = {
         proposalTemplate.find('.card-title').text(data[i].name);
         proposalTemplate.find('img').attr('src', data[i].picture);
         proposalTemplate.find('.btn-buy').attr('data-id', data[i].id);
-        proposalTemplate.find('.card-price').text(data[i].price+" ETH");
+        proposalTemplate.find('.card-price').text(data[i].price+" SHC");
         proposalTemplate.find('.card-text').text(data[i].description);
         proposalsRow.append(proposalTemplate.html());
         App.names.push(data[i].name);

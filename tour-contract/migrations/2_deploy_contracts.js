@@ -1,5 +1,5 @@
 const tour = artifacts.require("tour");
-const token = artifacts.require("ERC20MYN");
+const token = artifacts.require("ERC20SHC");
 
 module.exports = function (deployer) {
   deployer.deploy(token);

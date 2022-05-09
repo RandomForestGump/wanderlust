@@ -46,5 +46,21 @@
     "picture": "images/McKinley_Monument.jpeg",
     "price": 200,
     "status": false
+  },
+  {
+    "id": 6,
+    "name": "Mckinley Park",
+    "description": "Mckinly park tour",
+    "picture": "images/McKinley_Monument.jpeg",
+    "price": "1000",
+    "status": false
+  },
+  {
+    "id": 7,
+    "name": "Mckinley Monument",
+    "description": "Mckinley Tour",
+    "picture": "images/McKinley_Monument.jpeg",
+    "price": "100",
+    "status": false
   }
 ]
